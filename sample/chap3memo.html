@@ -1,0 +1,253 @@
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>Hello, world!</title>
+</head>
+<body>
+  
+  
+<!--学んだ事をメモする-->
+
+<!--小さい副見出しを作成する-->
+<h3>
+  主見出し<small class="text-muted">副見出し (small.text-muted) </small>
+</h3>
+
+<!--通常の見出しスタイルよりもさらに目立たせる-->
+<h1 class="display-1">h1.display-1</h1>
+<h1 class="display-2">h1.display-2</h1>
+<h1 class="display-3">h1.display-3</h1>
+<h1 class="display-4">h1.display-4</h1>
+
+<!--段落内のテキストを目立たせる-->
+<p class="lead">目立たせたい段落(p.lead)</p>
+<p>標準的な段落</p>
+
+
+<!--テキストを細めにするsmall-->
+<p><small> [small要素]</small>を使って、テキストを細目・注釈を表すテキストとして小さなサイズで表示させることが出来ます</p>
+<p><span class="small">[smallクラス]</span>を使用してsmall要素と一致させることもできる</p>
+
+<!--テキストをマークアップし、太字で表示する-->
+<p>strong要素を使って、テキストを<strong>重要なテキスト</strong>として太字で表示することができる。</p>
+<p>b要素を使ってテキストを<b>強調表示するテキスト</b>として太字で表示することができる</p>
+
+<!--テキストをハイライト表示する-->
+<p>mark要素を使って、テキストを<mark>ハイライト表示</mark>することが出来ます。</p>
+<p>定義済みクラス「mark」を使用して<span class="mark">mark要素とスタイルを一致させることもできます</span></p>
+
+<!--取り消し線を表示する-->
+<p>del要素を使って、テキストを<del>削除されたテキスト</del>として取り消し線を表示することができる</p>
+
+<!--無効なテキストしてマークアップし、取り消し線を表示する-->
+<p>s要素のデフォルトスタイルを使って、テキストを<s>無効なテキスト</s>として取り消し線を表示することができる</p>
+
+<!--後から挿入されたテキストとして下線を表示する-->
+<p>ins要素のデフォルトスタイルを使って、<ins>後から挿入されたテキスト</ins>として架線を表示することができる</p>
+
+<!--ラベル付けされたテキストとして下線を表示する-->
+<p>u要素のデフォルトスタイルを使って、テキストを<u>ラベル付けされたテキスト</u>として下線を表示することができる</p>
+
+
+<!--イタリック体または斜体で表示する-->
+<p>em要素のデフォルトスタイルを使って、テキストを<em>強調したいテキスト(Emphasis text)</em>としてイタリックまたは斜体で表示することができる</p>
+
+<!--マウスポインタを合わせると説明文表示-->
+<p><abbr title="HyperText Markup Language">HTML</abbr></p>
+<P><abbr title="HyperText Markup Language" class="initialism">html</abbr></P>
+
+
+<!--別ソースのコンテンツをブロック単位で引用する-->
+<p>引用文の例を見てみましょう</p>
+<blockquote class="blockquote">
+  <p class="mb-0">基本の引用文です</p>
+</blockquote>
+
+ <!--引用文の引用元を特定表示を行う-->
+ <blockquote class="blockquote">
+   <p class="mb-0">基本の引用文です。</p>
+   <footer class="blockquote-footer">文章の<cite title="引用元の名前">引用元</cite>が明示できます。</footer>
+ </blockquote>
+
+<!--引用の位置合わせを中央揃えにする-->
+<blockquote class="blockquote text-center">
+  <p class="mb-0">基本の引用文です。</p>
+  <footer claSS="blockquote-footer">文章の<cite title="引用元の名前">引用元</cite>が明示できます</footer>
+</blockquote>
+
+<!--引用の位置合わせを右揃えにする-->
+<blockquote class="blockquote text-right">
+  <p class="mb-0">基本の引用文です。</p>
+  <footer claSS="blockquote-footer">文章の<cite title="引用元の名前">引用元</cite>が明示できます</footer>
+</blockquote>
+
+
+<!--リストマーカーと左パディングを削除する-->
+<ul class="list-unstyled">
+  <li>リストマーカーのないリスト項目</li>
+  <li>リストマーカーのないリスト項目
+    <ul>
+      <li>ネストされたリスト項目</li>
+      <li>ネストされたリスト項目</li>
+      <li>ネストされたリスト項目</li>
+    </ul>
+  </li>
+  <li>リストマーカーのないリスト項目</li>
+  <li>リストマーカーのないリスト項目</li>
+</ul>
+
+<!--リスト項目を横並びにしてパディングを適用させる-->
+<ul class="list-inline">
+  <li class="list-inline-item">インラインリスト項目</li>
+  <li class="list-inline-item">インラインリスト項目</li>
+  <li class="list-inline-item">インラインリスト項目</li>
+</ul>
+
+<!--定義リスト-->
+<div class="row">
+  <dt class="col-sm-3">用語1</dt>
+  <dd class="col-sm-9">用語1の説明</dd>
+  <dt class="col-sm-3 text-truncate">用語２の長いテキストは切り捨てて省略</dt>
+  <dd class="col-sm-9">用語2の説明</dd>
+  <dt class="col-sm-3">用語3</dt>
+  <dd class="col-sm-9">
+    <dl class="row">
+      <dt class="col-sm-4">ネストされた用語4</dt>
+      <dd class="col-sm-8">ネストされた用語4の説明</dd>
+    </dl>
+  </dd>
+</div>
+
+<!--インラインのコード表示部分をマークアップする-->
+インラインのコード表示部分を<code>&lt;code&gt;</code>タグで囲みます
+
+<!--コードブロックの表記-->
+<pre><code>&lt;p&gt;サンプルテキスト&lt;/p&gt;&lt;p&gt;２行目のサンプルテキスト&lt;/p&gt;</code></pre>
+
+<!--変数をイタリック体で表記する-->
+<var>y</var> = <var>m</var><var>x</var> + <var>b</var>
+
+<!--通常キーボードから入力される入力テキストを表記-->
+ディレクトリを切り替えるには、<kbd>cd</kbd>と続けてディレクトリ名を入力します。設定を編集するには、<kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd> 
+
+<!--プログラムからサンプル出力を表示する-->
+<samp>This text is menant to be treated as sample output from a computer program.</samp>
+
+画像をレスポンシブ対応させる
+<h3 class="mb-4">レスポンシブ画像(img-fluid)</h3>
+<img src="..." class="img-fluid" alt="レスポンシブ画像">
+
+<!--サムネイル画像-->
+<img src=".." alt="サムネイル画像" class="img-thumbnail">
+
+<!--画像の位置を合わせる-->
+<div class="clearifix">
+  <img src=".."class="rounded float-left alt=左揃え画像">
+  <img src=".."class="rounded float-right alt=右揃え画像">
+</div>
+
+<div class="text-center">
+  <img src=".." alt="中央画像">
+</div>
+
+<img src=".." class="rounded mx-auto d-block" alt="中央揃え画像">
+
+
+<!--暗色テーブルを作成する-->
+
+<table class="table table-dark">
+  ・・中略・・
+</table>
+
+<!--縞模様のテーブル-->
+<table class="table table-striped">
+  ・・中略・・
+</table>
+
+<!--斜線付きテーブル-->
+<table class="table table-borderd">
+  ・・中略・・
+</table>
+
+<!--斜線なしテーブル-->
+<table class="table borderless.html">
+  ・・中略・・
+</table>
+<!--マウスオーバー表示設定をする-->
+<table class="table table-hover">
+  ・・中略・・
+</table>
+
+<!--テーブルをコンパクト化する-->
+<table class="table table-sm">
+  ・・中略・・
+</table>
+
+<!--テーブルにキャプションをつける-->
+<table class="table">
+  <caption>このテーブルのキャプション</caption>
+  ・・中略・・
+</table>
+
+<!--テーブルをレスポンシブルにする-->
+<div class="table-responsive">
+  <table class="table">
+  ・・中略・・
+  </table>
+</div>
+
+<!--<レスポンシブ対応テーブルにブレイクポイントを追加する-->
+<div class="table-responsive-sm">
+  <table class="table">
+  ・・中略・・
+  </table>
+</div>
+
+<!--図表を作成する-->
+<figure class="figure">
+  <img src=".." class="figure-img img-fluid" alt="図表コンテンツ内の画像">
+  <figcaption class="figure-caption">画像についてのキャプション</figcaption>
+</figure>
+
+<!--図表のキャプションの位置を合わせる-->
+<!--キャプションの左揃え-->
+<div clasas="contaier">
+  <figure class="figure">
+    <img src="" class="figure-img img-fluid" alt="図表コンテンツないの画像">
+    <figcaption class="figure-caption text-left">図表キャプション(text-left: デフォルト)</figcaption>
+  </figure>
+</div>
+
+<!--キャプションの中央揃え-->
+<div clasas="contaier">
+  <figure class="figure">
+    <img src="" class="figure-img img-fluid" alt="図表コンテンツないの画像">
+    <figcaption class="figure-caption text-center">図表キャプション(text-center: デフォルト)</figcaption>
+  </figure>
+</div>
+
+<!--キャプションの右揃え-->
+<div clasas="contaier">
+  <figure class="figure">
+    <img src="" class="figure-img img-fluid" alt="図表コンテンツないの画像">
+    <figcaption class="figure-caption text-right">図表キャプション(text-right: デフォルト)</figcaption>
+  </figure>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/jquery-3.3.1.slim.min.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
