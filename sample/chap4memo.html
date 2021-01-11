@@ -1,0 +1,595 @@
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>Hello, world!</title>
+</head>
+<body>
+
+<!--ジャンボトロンの基本的な使用例-->
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="display-3">Jumbotron</h1>
+    <p class="lead">これはジャンボトロンのサンプルです。</p>
+  </div>
+</div>
+
+<!--ジャンボトロンで画面幅いっぱいに表示する-->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Fluid jumbotron</h1>
+    <p class="lead">これは全幅のジャンボトロンのサンプルです</p>
+  </div>
+</div>
+
+
+<!--エラーメッセージを表示する-->
+<div class="alert alert-primary" role="alert">
+  alert-primary
+</div>
+
+<!--リンク箇所の色や太さを調整する-->
+<div class="alert alert-primary" role="alert">
+  alert-primary内の<a href="#" class="alert-link">リンク#002752</a>
+</div>
+
+<!--アラート内にコンテンツを追加する-->
+<div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">アラートの見出し(h4)</h4><!--見出し-->
+  <p>アラート内の段落(p)</p><!--段落-->
+  <hr><!--区切り-->
+  <p class="mb-0">アラート内の段落</p><!--段落-->
+</div>
+
+<!--アラートを閉じる-->
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  右側の「x」マークをクリックするとアラームが閉じます
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+
+<!--バッジの基本的な使用方法-->
+<h1>h1<span class="badge badge-primary">primary</span></h1>
+
+<!--バッジでカウンターを作成する-->
+<button type="button" class="btn btn-primary">
+  button<span class="badge badge-light">4</span> 
+</button>
+
+<!--バッジにスクリーンリーダー用の非表示テキストを加える-->
+<button type="button" class="btn btn-primary">
+  メッセージ<span class="badge badge-light">9</span> 
+  <!--sr-onlyクラスで非表示にしたスクリーンリーダー用テキスト-->
+  <span class="sr-only">未読メッセージ</span>
+</button>
+
+<!--ビル型のバッジを作成する-->
+<span class="badge badge-pill badge-primary">Primary</span>
+
+<!--アクション付きのバッチを作成する-->
+<a href="#" class="badge badge-success">badge-success</a>
+
+
+<!--プログレスバーの基本の使い方(progress-basic.html)-->
+<div class="progress mb-3">
+  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress mb-3">
+  <div class="progress-bar" style="width: 20%" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress mb-3">
+  <div class="progress-bar w-50"  role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress mb-3">
+  <div class="progress-bar" style="width:80%" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress mb-3">
+  <div class="progress-bar w-100" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+<!--プログレスバーにテキストラベルを追加する-->
+<div class="progress">
+  <div class="progress-bar w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+</div>
+
+<!--プログレスバーの高さを変更する-->
+<h3 class="mb-3">1pxの高さのプログレスバー</h3>
+<div class="progress mb-5" style="height: 1px">
+  <div class="progress-bar w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+<h3 class="mb-3">20pxの高さのプログレスバー</h3>
+<div class="progress mb-5" style="height: 20px">
+  <div class="progress-bar w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+<!--プログレスバーの背景を変更する-->
+<h3 class="mb-2">bg-success</h3>
+<div class="progress mb-3">
+  <div class="progress-bar bg-success" role="progressbar" style="width:25%" aria-valuenow="25" ariavaluemin="0" aria-valuemax="100"></div>
+</div>
+
+<!--複数のプログレスバーを重ねる-->
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width:15%" aria-valuenow="15" ariavaluemin="0" aria-valuemax="100"></div>
+  <div class="progress-bar" role="progressbar" style="width:30%" aria-valuenow="30" ariavaluemin="0" aria-valuemax="100"></div>
+  <div class="progress-bar" role="progressbar" style="width:20%" aria-valuenow="20" ariavaluemin="0" aria-valuemax="100"></div>
+</div>
+
+<!--プログレスバーをストライプにする-->
+<div class="progress mb-3">
+  <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+<!--プログレスバーのストライプをアニメーションにする-->
+<div class="progress mb-3">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+
+<!--カード基本的な使用方法-->
+
+<!--カードの枠：card-->
+<div class="card" style="max-width: 25rem;">
+  <!--カード上部にレイアウトされる画像: card-img-top-->
+  <img class="card-img-top" src=".." alt="..">
+  <!--カード本文-->
+  <div class="card-body">
+    <!--カード見出し:card-title-->
+    <h4 class="card-title">カードの見出し</h4>
+    <!--カードの副見出し:card-subtitle-->
+    <h6 class="card-subtitle">カードの副見出し</h6>
+    <!--カードの内容分:card-text-->
+    <p class="card-text">カードの内容文が入ります</p>
+    <a href="#" class="btn btn-primary">ボタン</a>
+  </div>
+</div>
+
+
+<!--カード内に画像を配置する-->
+<!--画像：上部-->
+<div class="card mb-3" style="max-width: 25rem;">
+  <!--カード上部に画像を配置:card-img-top-->
+  <img class="card-img-top" src="..." alt="...">
+  <div class="card-body">
+    <p class="card-text">カードの内容が入ります</p>
+  </div>
+</div>
+
+<!--画像：下部-->
+<div class="card" style="max-width: 25rem;">
+  <div class="card-body">
+    <p class="card-text">カードの内容が入ります</p>
+  </div>
+  <!--カード下部に画像を配置:card-img-bottom-->
+  <img class="card-img-bottom" src="..." alt="...">
+</div>
+
+<!--カードにリストグループを組み込む-->
+<div class="card" style="width: max-width: 25reml">
+  <!--カードないのリストグループ:list-group-flush-->
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">リスト01</li>
+    <li class="list-group-item">リスト02</li>
+    <li class="list-group-item">リスト03</li>
+  </ul>
+</div>
+
+<!--カード内にコンテンツを複合する-->
+<div class="card" style="width: max-width: 25reml">
+  <!--カード上部に画像を配置: card-img-top-->
+  <img class="card-img-top" src="..." alt"...">
+  <!--カードの本文:card-body-->
+  <div class="card-body">
+    <!--カードの見出し:card-title-->
+    <div class="card-title">カードの見出し</div>
+    <!--カードの内容分:card-text-->
+    <p class="card-text">カードの内容分</p>
+  </div>
+  <!--カードないのリストグループ:list-group-flush-->
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">リスト01</li>
+    <li class="list-group-item">リスト02</li>
+    <li class="list-group-item">リスト03</li>
+  </ul>
+  <!--カードの本文:card-body-->
+  <div class="card-body">
+    <!--カード内リンク:card-link-->
+    <a href="#" class="card-link">カード内リンク</a>
+    <a href="#" class="card-link">カード内リンク</a>
+  </div>
+</div>
+
+
+<div class="card" style="width: max-width: 25reml">
+  <!--カードのヘッダー:card-header-->
+  <div class="card-header">
+    カードのヘッダー
+  </div>
+  <!--カードの本文-->
+  <div class="card-body">
+    <h4 class="card-title">カードの見出し</h4>
+    <p class="card-text">カードの内容文が入ります</p>
+  </div>
+  <!--カードフッター:card-footer-->
+  <div class="card-footer">
+    カードのフッター
+  </div>
+</div>
+
+<div class="card" style="width: max-width: 25reml">
+  <!--カードのヘッダー:card-header-->
+  <h4 class="card-header">
+    カードのヘッダー
+  </h4>
+  <!--カードの本文-->
+  <div class="card-body">
+    <h4 class="card-title">カードの見出し</h4>
+    <p class="card-text">カードの内容文が入ります</p>
+  </div>
+</div>
+
+<!--カードのスタイルを変更する-->
+<div class="card text-white bg-primary mb-3" style="width: max-width: 25reml">
+   <!--カードのヘッダー:card-header-->
+  <div class="card-header">
+    カードのヘッダー
+  </div>
+  <!--カードの本文-->
+  <div class="card-body">
+    <h4 class="card-title">カードの見出し</h4>
+    <p class="card-text">カードの内容文が入ります</p>
+  </div>
+</div>
+
+<!--カードのボーター色を設定する-->
+<div class="card border-primary" style="width: max-width: 25reml">
+   <!--カードのヘッダー:card-header-->
+  <div class="card-header border-primary">
+    カードのヘッダー
+  </div>
+  <!--カードの本文-->
+  <div class="card-body">
+    <h4 class="card-title">カードの見出し</h4>
+    <p class="card-text">カードの内容文が入ります</p>
+  </div>
+</div>
+
+<!--カードの背景色を除去する-->
+<div class="card" style="width: max-width: 25reml">
+   <!--カードのヘッダー:card-header-->
+  <div class="card-header bg-transparent">
+    背景色の除去:bg-transparent
+  </div>
+  <!--カードの本文-->
+  <div class="card-body">
+    <h4 class="card-title">カードの見出し</h4>
+    <p class="card-text">カードの内容文が入ります</p>
+  </div>
+  <!--フッターの背景色の除去:bg-transparent-->
+  <div class="card-footter bg-transparent">
+    背景色の除去:bg-transparent
+  </div>
+</div>
+<!--カードのサイズを変更する-->
+<!--グリッドレイアウトに組み込んで幅を指定する-->
+  <div class="row">
+    <!--カラム01-->
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          ・・・中略・・・
+        </div>
+      </div>
+    </div>
+    <!--カラム0２-->
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          ・・・中略・・・
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--Sizingユーティリティを使用して幅を指定する-->
+  <div class="card w-75">
+    <div class="card-body">
+      <h4 class="card-text">カードの幅指定:w-75</h4>
+      <p class="card-text">カードの幅が親要素の75%になります</p>
+      <a href="#" class="btn btn primary">ボタン</a>
+    </div>
+  </div> 
+  
+<!--カードのテキストを整列する-->
+<!--初期設定(左揃え)-->
+<div class="card" style="max-width: 25rem">
+  <div class="card-body">
+    <h4 class="acrd-title">カードの見出し</h4>
+    <p class="card-text">カードの内容文が入ります</p>
+    <a href="#" class="btn btn-primary">ボタン</a>
+  </div>
+</div>
+<!--中央揃え:text-center-->
+<div class="card text-center" style="max-width: 25rem">
+  <div class="card-body">
+    <h4 class="acrd-title">カードの見出し</h4>
+    <p class="card-text">カードの内容文が入ります</p>
+    <a href="#" class="btn btn-primary">ボタン</a>
+  </div>
+</div> 
+<!--<右揃え: text-right>-->
+<div class="card text-right" style="max-width: 25rem">
+  <div class="card-body">
+    <h4 class="acrd-title">カードの見出し</h4>
+    <p class="card-text">カードの内容文が入ります</p>
+    <a href="#" class="btn btn-primary">ボタン</a>
+  </div>
+</div> 
+
+<!--カード内のヘッダー内にタブ型ナビゲーションを配置する-->
+<div class="card">
+  <!--カードのヘッダー-->
+  <div class="card-header">
+    <!--タブ型のナビゲーション: card-header-tabs-->
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">アクティブ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">リンク</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">リンク</a>
+      </li>
+    </ul>
+  </div>
+  <!--カードの本文-->
+  <div class="card-body">
+    ・・・中略・・・・
+  </div>
+</div> 
+
+<!--ピル型のナビゲーション-->
+<div class="card">
+  <!--カードのヘッダー-->
+  <div class="card-header">
+    <!--ピル型のナビゲーションcard-header-pills-->
+    <ul class="nav nav-pills card-header-pills">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">アクティブ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">リンク</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">リンク</a>
+      </li>
+    </ul>
+  </div>
+  <!--カードの本文-->
+  <div class="card-body">
+    ・・・中略・・・・
+  </div>
+</div> 
+
+
+
+  <!--カードの画像とテキストを重ねる-->
+<div class="card">
+  <img class="card-img" src="..." alt="...">
+  <!--画像と重ね合わせるテキストブロック:card-img-overlay-->
+  <div class="card-img-overlay">
+    <h4 class="card-title">カードの見出し</h4>
+    <p class="card-text">カードの内容文が入ります。</p>
+  </div>
+</div>  
+
+<!--カードグループによるレイアウト-->
+<!--カードグループ: card-group-->
+<div class="card-group">
+  <!--カード01-->
+  <div class="card">
+    <img class="card-img-top" src="..." alt"...">
+    <di class="card-body">
+      ・・・中略・・・
+    </di>
+    <div class="card-footer">
+      ・・・中略・・・
+    </div>
+  </div>
+  
+  <!--カード02-->
+  <div class="card">
+    <img class="card-img-top" src="..." alt"...">
+    <di class="card-body">
+      ・・・中略・・・
+    </di>
+    <div class="card-footer">
+      ・・・中略・・・
+    </div>
+  </div>
+  
+  <!--カード03-->
+  <div class="card">
+    <img class="card-img-top" src="..." alt"...">
+    <di class="card-body">
+      ・・・中略・・・
+    </di>
+    <div class="card-footer">
+      ・・・中略・・・
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="card-columns">
+  <!--カード01-->
+  <div class="card">
+    1
+    ・・・中略・・・
+  </div>
+  
+   <!--カード02-->
+  <div class="card p-3">
+    2
+    ・・・中略・・・
+  </div>
+  
+   <!--カード03-->
+  <div class="card">
+    3
+    ・・・中略・・・
+  </div>
+  
+   <!--カード04-->
+  <div class="card bg-secondary text-white text-center p-3">
+    4
+    ・・・中略・・・
+  </div>
+  
+   <!--カード05-->
+  <div class="card text-center">
+    5
+    ・・・中略・・・
+  </div>
+  
+  <!--カード06-->
+  <div class="card">
+    6
+    ・・・中略・・・
+  </div>
+  
+  <!--カード07-->
+  <div class="card p-3 text-right">
+    7
+    ・・・中略・・・
+  </div>
+  
+  <!--カード08-->
+  <div class="card">
+    8
+    ・・・中略・・・
+  </div>
+  
+</div> 
+
+<!--メディアオブジェクトの基本的な使用例-->
+<div class="media">
+  <!--画像-->
+  <img class="mr-3" alt="" src="">
+  <!--メディア本文-->
+  <div class="media-body">
+    <h5>メディアオブジェクト</h5>
+    この文章はダミーです。文字の大きさ、量、字間を確認するために入れています。
+  </div>
+</div>
+
+<!--メディアオブジェクトの入れ子(media-object-nest.html)-->
+<!--メディアオブジェクト-->
+<div class="media">
+  <!--画像-->
+  <img class="mr-3" alt="" src="">
+  <!--メディア本体-->
+  <div class="media-body">
+    <h5>メディアオブジェクト</h5>
+    この文章はダミーです。文字の大きさ、量、字間を確認するために入れています。
+    <!--メディアオブジェクトの入れ子-->
+    <div class="media mt-3">
+      <!--リンク画像-->
+      <a href="#"><img class="mr-3" alt="" src=""></a>
+      <!--メディア本文-->
+      <div class="media-body">
+        <h5メディアオブジェクト入れ子></h5>
+        この文章はダミーです。文字の大きさ、量、字間を確認するために入れています。
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--メディアオブジェクトの上部に画像を配置(media-object-align-start.html)-->
+<!--メディアオブジェクト-->
+<div class="media">
+  <img class="align-self-start mr-3" alt="#" src="">
+  <!--メディア本文-->
+  <div class="media-body">
+    <h5>...</h5>
+    ・・・中略・・
+  </div>
+</div>
+
+<!--メディアオブジェクトの並び替え-->
+<!--メディアオブジェクト：通常-->
+<div class="media">
+  <img class="mr-3" alt=".." src="..">
+  <!--メディア本文-->
+  <div class="media-body">
+    <h5>メディアオブジェクト:通常</h5>
+    HTML構造上に、画像を先に、メディア本文を後に記述しています。
+  </div>
+</div>
+
+<hr>
+<div class="media">
+  <img class="order-2 ml-3" alt=".." src="..">
+  <!--メディア本文-->
+  <div class="media-body order-1">
+    <h5>メディアオブジェクト:並び替え</h5>
+    HTML構造上に、画像を先に、メディア本文を記述していますが、orderクラスを使用して表示上の順序を入れ替えています。
+  </div>
+</div>
+
+<!--メディアオブジェクトをリストに組み込む-->
+<ul class="list-unstyled">
+  <!--メディアオブジェクト-->
+  <li class="media mb-4">
+    <!--画像-->
+    <img class="mr-3" src=".." alt="..">
+    <!--メディア本文-->
+    <div class="media-body">
+      <h5>...</h5>
+      中略
+    </div>
+  </li>
+   <!--メディアオブジェクト-->
+  <li class="media mb-4">
+    <!--画像-->
+    <img class="mr-3" src=".." alt="..">
+    <!--メディア本文-->
+    <div class="media-body">
+      <h5>...</h5>
+      中略
+    </div>
+  </li> 
+  <!--メディアオブジェクト-->
+  <li class="media mb-4">
+    <!--画像-->
+    <img class="mr-3" src=".." alt="..">
+    <!--メディア本文-->
+    <div class="media-body">
+      <h5>...</h5>
+      中略
+    </div>
+  </li>  
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/jquery-3.3.1.slim.min.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
