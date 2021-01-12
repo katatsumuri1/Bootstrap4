@@ -319,8 +319,247 @@
   <a class="navbar-brand" href="#">ブランド</a>
 </nav>
 
+<!--ブランドと切替ボタンの位置設定-->
+<nav class="navbar navbar-expad-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">ブランド</a>
+  <button class="navbar-toggeler" type="button" data-toggle="collapse" data-target="#navbarNav01" aria-controls="navbarNav01" aria-expanded="false"
+  aria-label="ナビゲーション切替">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+
+<!--ナビゲーションバーで外部コンテンツの表示・非表示を切り替える(navbar-eternal.html)-->
+<div class="collapse" id="navbarToggleExternalContent">
+  <div class="bg-dark p-4">
+    <h4 class="text-white">折り畳みコンテンツ</h4>
+    <span class="text-muted">ナビゲーションバーブランド経由で切り替えか</span>
+  </div>
+</div> 
+<nav class="navbar navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+  aria-expanded="false" aria-label="ナビゲーション切り替え">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+
+<!--パンクズリストの基本的な使用例(breadcrumb.html)-->
+<nav aria-label="breadcrumb" role="navigation">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">ホーム</a></li>
+    <li class="breadcrumb-item"><a href="#">ライブラリー</a></li>
+    <li class="breadcrumb-item active" aria-current="page">データ</li>
+  </ol>
+</nav>
+
+<!--リストグループの基本的な使用例(listgrou-basic.html)-->
+<ul class="list-group">
+  <li class="list-group-item">リスト項目1</li>
+  <li class="list-group-item">リスト項目2</li>
+  <li class="list-group-item">リスト項目3</li>
+</ul>
+
+<!--リスト項目をアクティブ状態にする-->
+<ul class="list-group">
+  <li class="list-group-item active">リスト項目1</li>
+  <li class="list-group-item">リスト項目2</li>
+  <li class="list-group-item">リスト項目3</li>
+</ul>
+
+<!--リスト項目を無効状態にする-->
+<ul class="list-group">
+  <li class="list-group-item disabled">リスト項目1</li>
+  <li class="list-group-item">リスト項目2</li>
+  <li class="list-group-item">リスト項目3</li>
+</ul>
+
+<!--リンク付きリストグループ-->
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action">リスト項目1</a>
+  <a href="#" class="list-group-item list-group-item-action">リスト項目2</a>
+  <a href="#" class="list-group-item list-group-item-action disabled">リスト項目3</a>
+</div>
+
+<!--ボタンのリストグループ-->
+<div class="list-group">
+  <button type="button" class="list-group-item list-group-item-action">リスト項目1</button>
+  <button type="button" class="list-group-item list-group-item-action">リスト項目2</button>
+  <button type="button" class="list-group-item list-group-item-action">リスト項目3</button>
+  <button type="button" class="list-group-item list-group-item-action" disabled>リスト項目4</button>
+</div>
+
+<!--リストグループの背景色を変更する-->
+<ul class="list-group">
+  <li class="list-group-item list-group-item-primary">リスト項目1</li>
+  <li class="list-group-item list-group-item-secondary">リスト項目2</li>
+  <li class="list-group-item list-group-item-success">リスト項目3</li>
+  <li class="list-group-item list-group-item-danger">リスト項目4</li>
+  <li class="list-group-item list-group-item-warning">リスト項目5</li>
+  <li class="list-group-item list-group-item-info">リスト項目6</li>
+  <li class="list-group-item list-group-item-light">リスト項目7</li>
+  <li class="list-group-item list-group-item-dark">リスト項目8</li>
+</ul>
 
 
+<!--アクション可能な背景色クラスのリストグループ-->
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action list-group-item-primary">これは「primary」のリスト項目です。</a>
+</div>
+
+<!--アクティブ状態のアクション可能な背景クラスのリストグループ-->
+<div class="list-group">
+<a href="#" class="list-group-item list-group-item-action list-group-item-primary active">これは「primary」のリスト項目です。</a>
+</div>
+
+
+<!--バッジ付きリストグループ-->
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    リスト項目1
+    <span class="badge badge-primary badge-pill">14</span>
+  </li>
+</ul>
+
+<!--カスタムコンテンツのリストグループ-->
+<div class="list-group">
+  <a href="#" class="list-grou-item list-grou-item-action flex-column align-items-start active">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">リスト項目１のヘッダー</h5>
+      <small>３日前</small>
+    </div>
+    <p class=mb-1>リスト項目１のコンテンツの見本です</p>  
+    <small>リスト項目１のサブコンテンツです</small>
+  </a>
+</div>
+
+<!--枠なしのリストグループ-->
+<div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">リスト項目1</li>
+    <li class="list-group-item">リスト項目2</li>
+    <li class="list-group-item">リスト項目3</li>
+  </ul>
+</div>
+
+<!--ページネーション基本的な使用例-->
+<nav aria-label="ページネーションの例">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">前</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">次</a></li>
+  </ul>
+</nav>
+
+<!--ページネーションにアイコンを使用する(pagination-icon.html)-->
+<nav aria-label="ページネーションの例">
+  <ul class="pagination">
+    <li class="pagi-item">
+      <a class="page-link" href="#" aria-label="前へ">
+        <span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">前へ</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="次へ">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">次へ</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+<!--リンクの無効状態やアクティブ状態を指定する-->
+<nav aria-label="ページナビゲーションの例">
+  <ul class="pagination">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">前</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active">
+      <a class="page-link" href="#">2<span class="sr-only">(現ページ)</span></a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">次</a>
+    </li>
+  </ul>
+</nav>
+
+<!--ページネーションのサイズを変更する-->
+<h3>pagination-lg</h3>
+<nav aria-label="ページネーションの例">
+  <ul class="pagination pagination-lg">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">前</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active">
+      <a class="page-link" href="#">2<span class="sr-only">(現ページ)</span></a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">次</a>
+    </li>
+  </ul>
+</nav>
+
+<h3>pagination-sm</h3>
+<nav aria-label="ページネーションの例">
+  <ul class="pagination pagination-sm">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">前</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active">
+      <a class="page-link" href="#">2<span class="sr-only">(現ページ)</span></a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">次</a>
+    </li>
+  </ul>
+</nav>
+
+<!--ページネーションの配置-->
+<section>
+  <h3>中央揃え(justfy-content-center)</h3>
+  <nav aria-label="ページネーションの例">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1">前</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active">
+        <a class="page-link" href="#">2<span class="sr-only">(現ページ)</span></a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">次</a>
+      </li>
+    </ul>  
+  </nav>
+  <h3>右揃え(justfy-content-end)</h3>
+  <nav aria-label="ページネーションの例">
+    <ul class="pagination justify-content-end">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1">前</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active">
+        <a class="page-link" href="#">2<span class="sr-only">(現ページ)</span></a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">次</a>
+      </li>
+    </ul>  
+  </nav>
+</section>
 
 <script src="js/jquery-3.3.1.slim.min.js"></script> 
 <script src="js/bootstrap.bundle.min.js"></script>
