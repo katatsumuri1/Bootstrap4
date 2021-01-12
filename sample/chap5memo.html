@@ -1,0 +1,328 @@
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>Hello, world!</title>
+</head>
+<body>
+
+<!--ul要素を使用したナビゲーション-->
+<h3>ul要素にnavクラスを追加</h3>
+  <ul class="nav">
+    <li class="nav-item"><a class="nav-link" href="#">リンク</a></li>
+    <li class="nav-item"><a class="nav-link active" href="#">アクティブ</a>
+    <li class="nav-item"><a class="nav-link disabled" href="#">無効</a>
+  </ul>
+
+<!--nav要素を使用してナビゲーションを作成-->
+<h3>nav要素にnavクラスを追加</h3>
+<nav class="nav">
+  <a class="nav-link" href="#">リンク</a>
+  <a class="nav-link active" href="#">アクティブ</a>
+  <a class="nav-link disabled" href="#">無効</a>
+</nav>
+
+<div class="container">
+  <h3>中央揃え</h3>
+  <ul class="nav justfy-content-center"><!--中央揃え-->
+    <li class="nav-item"><a class="nav-link" href="#">リンク</a></li>
+    <li class="nav-item"><a class="nav-link active" href="#">アクティブ</a>
+    <li class="nav-item"><a class="nav-link disabled" href="#">無効</a>
+  </ul>
+</div>
+<div class="container">
+  <h3>右揃え</h3>
+  <ul class="nav justify-content-end">
+    <li class="nav-item"><a class="nav-link" href="#">リンク</a></li>
+    <li class="nav-item"><a class="nav-link active" href="#">アクティブ</a>
+    <li class="nav-item"><a class="nav-link disabled" href="#">無効</a>
+  </ul>
+</div>
+
+<!--ナビゲーションを縦に並べる-->
+<h3>ナビゲーションを縦に並べる: ul要素</h3>
+<ul class="nav flex-column">
+  <li class="nav-item"><a class="nav-link" href="#">リンク</a></li>
+  <li class="nav-item"><a class="nav-link active" href="#">アクティブ</a>
+  <li class="nav-item"><a class="nav-link disabled" href="#">無効</a>
+</ul>
+ 
+ <h3>ナビゲーションを縦に並べる: nav要素</h3>
+<nav class="nav flex-column">
+  <a class="nav-link" href="#">リンク</a></li>
+  <a class="nav-link active" href="#">アクティブ</a>
+  <a class="nav-link disabled" href="#">無効</a>
+</nav>
+
+<!--タブナビゲーションを作成する-->
+<ul class="nav nav-tabs">
+  <li class="nav-item"><a class="nav-link active" href="#">アクティブ</a></li>
+  <li class="nav-item"><a class="nav-link" href="#">リンク</a>
+  <li class="nav-item"><a class="nav-link disabled" href="#">無効</a>
+</ul>
+
+<!--ピルナビゲーション(navs-pills.html)-->
+<ul class="nav nav-pills">
+  <li class="nav-item"><a class="nav-link active" href="#">アクティブ</a></li>
+  <li class="nav-item"><a class="nav-link" href="#">リンク</a>
+  <li class="nav-item"><a class="nav-link disabled" href="#">無効</a>
+</ul>
+
+<!--ナビゲーション項目の幅を調整する: ul要素(navs-fill.html)-->
+<div class="container">
+  <h3>nav-fillクラスがない時</h3>
+  <ul class="nav nav-pills">
+    <li class="nav-item"><a class="nav-link active" href="#">アクティブ</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">リンク</a>
+    <li class="nav-item"><a class="nav-link disabled" href="#">無効</a>
+  </ul>
+</div>
+<div class="container">
+  <h3>nav-fillクラスを追加した時</h3>
+  <ul class="nav nav-pills nav-fill">
+    <li class="nav-item"><a class="nav-link active" href="#">アクティブ</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">リンク</a>
+    <li class="nav-item"><a class="nav-link disabled" href="#">無効</a>
+  </ul>
+</div>
+<!--ナビゲーション項目の幅を調整する: nav要素(navs-fill.html)-->
+<h3>nav要素を使用したナビゲーション</h3>
+<nav class="nav nav-pills nav-fill">
+  <a class="nav-item nav-link active" href="#">アクティブ</a>
+  <a class="nav-item nav-link" href="#">リンク</a>
+  <a class="nav-item nav-link disabled" href="#">無効</a>
+</nav>
+
+<!--ナビゲーション項目の幅を等幅にする-->
+<div class="container">
+  <h3>nav-jusitiedクラスを追加した時</h3>
+  <nav class="nav nav-pills nav-justified">
+    <a class="nav-item nav-link active" href="#">リンク1</a>
+    <a class="nav-item nav-link" href="#">リンク2</a>
+    <a class="nav-item nav-link active" href="#">長いテキストリンク</a>
+    <a class="nav-item nav-link" href="#">リンク3</a>
+  </nav>
+</div>
+
+<!--Flexユーティリティーを使用したレスポンシブなナビゲーション-->
+<nav class="nav nav-pills flex-column flex-sm-row">
+  <a class="nav-item nav-link active" href="#">アクティブ</a>
+  <a class="nav-item nav-link" href="#">リンク</a>
+  <a class="nav-item nav-link disabled" href="#">無効</a>
+</nav>
+
+
+<!--ドロップダウンを組み込んだタブ型ナビゲーション(navs-tabs-dropdown.html)-->
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">アクティブ</a>
+  </li>
+  <li class="nav-item dropdown"><!--ここからドロップダウン-->
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">ドロップダウン</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">リンク1</a>
+      <a class="dropdown-item" href="#">リンク2</a>
+      <a class="dropdown-item" href="#">リンク3</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">その他リンク</a>
+    </div>
+  </li>
+  <li class="nav-item"><!--ドロップダウンここまで-->
+    <a class="nav-link" href="#">リンク</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">無効</a>
+  </li>
+</ul>
+
+<!--ナビゲーションバーの基本的な使い方-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
+  <a class="navbar-brand" href="#">ブランド</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapes" data-target="#切替表示されるコンテンツ名" 
+  aria-controls="切替標示されるコンテンツ名" aria-expanded="false" aria-label="ナビゲーション切替">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapese" id="切替標示されるコンテンツ名">
+    <ul class="navbar-nav mr-auto">
+      ・・・中略・・・
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      ・・・中略・・・
+    </form>
+  </div>
+</nav>
+
+
+<!--ナビゲーションバーブランドの例-->
+<div class="container">
+  <h3>a要素を使用したブランド</h3>
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">ブランド</a>  
+  </nav>
+</div>
+<div class="container">
+  <h3>span要素を使用したブランド</h3>
+  <nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-brand">ブランド</span>  
+  </nav>
+</div>
+<div class="container">
+  <h3>a要素内に画像を使用したブランド</h3>
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="bootstrap-solid.svg" width="30" height="30" alt="..">
+    </a>  
+  </nav>
+</div>
+<div class="container">
+  <h3>a要素内に画像とテキストを使用したブランド</h3>
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="bootstrap-solid.svg" width="30" height="30" alt="..">
+      Bootstrap
+    </a>  
+  </nav>
+</div>
+
+<!--ul要素を使用したナビゲーションバー-->
+<div class="container">
+  <h3>a要素内に画像を使用したブランド</h3>
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="bootstrap-solid.svg" width="30" height="30" alt="...">
+    </a>  
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav"><!--ここからナビゲーション-->
+        <li class="nav-item active">
+          <a class="nav-link" href="#">リンク1<span class="sr-only">(現位置)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">リンク2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">リンク3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">無効</a>
+        </li>
+      </ul><!--ここまでナビゲーション-->
+    </div>
+  </nav>
+</div>
+
+<!--div要素を使用したナビゲーションバー-->
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="bootstrap-solid.svg" width="30" height="30" alt="...">
+  </a>  
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="navbar-nav"><!--ここからナビゲーション-->
+      <a class="nav-item nav-link active" href="#">リンク1
+      <span class="sr-only">(現位置)</span></a>
+      <a class="nav-item nav-link" href="#">リンク2</a>
+      <a class="nav-item nav-link" href="#">リンク3</a>
+      <a class="nav-item nav-link disabled" href="#">無効</a>
+    </div>
+  </div>
+</nav>
+
+<!--ナビゲーションバーにドロップダウンを追加する-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  ・・・中略・・・
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown"><!--ここからドロップダウン-->
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          ドロップダウン切替
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
+          <a class="dropdown-item" href="#">ドロップダウンリンク1</a>
+          <a class="dropdown-item" href="#">ドロップダウンリンク2</a>
+          <a class="dropdown-item" href="#">ドロップダウンリンク3</a>
+        </div>
+      </li><!--ここまでドロップダウン-->
+    </ul>
+    ・・中略・・
+  </div>
+</nav>
+
+
+<!--ナビゲーションバーにフォームを追加する-->
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand">ブランド</a>
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="検索キーワード" aria-lebel="検索キーワード">
+    <button class="btn btn-outline-success my-2 my-sm0"type="submit">検索</button>
+  </form>
+</nav>
+
+<!--ナビゲーションバーに入力グループを追加する-->
+<nav class="navbar navbar-dark bg-dark">
+  <form class="form-inline">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">@</span>
+      </div>
+      <input type="text" class="form-control" placeholder="ユーザー名" aria-labe="ユーザー名" aria-describedby="basic-addon1">
+    </div>
+  </form>
+</nav>
+
+
+<!--ナビゲーションバーにサイズ違いのボタンを配置する-->
+<nav class="navbar navbar-dark bg-dark">
+  <form class="form-inline">
+    <button class="btn btn-light mr-3" type="button">通常のボタン</button>
+    <button class="btn btn-sm btn-light" type="button">小サイズのボタン</button>
+  </form>
+</nav>
+
+<!--ナビゲーションバーにテキストを追加する-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <form class="form-inline">
+    <button class="btn btn-light mr-3" type="button">通常のボタン</button>
+    <button class="btn btn-sm btn-light" type="button">小サイズのボタン</button>
+  </form>
+  <div class="collapse navbar-collapse" id="navbarText">
+    ・・・中略・・・
+    <span class="navbar-text ml-auto">ナビゲーションバー内テキスト</span>
+  </div>
+</nav>
+
+
+<!--ナビゲーションバーの配色を行う-->
+<h3>navbar-darkで文字色を明るくし、bg-darkで暗い背景色を設定</h3>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  ・・中略・・
+</nav>
+<h3>navbar-darkで文字色を明るくし、bg-primaryで青い背景色を設定</h3>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  ・・中略・・
+</nav>
+<h3>navbar-lightで文字色を暗くし、背景色をcssで設定</h3>
+<nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+  ・・中略・・
+</nav>
+
+
+<!--ナビゲーションバーをページ上部に固定する-->
+<body style="padding-top:50px">
+  <nav class="navbar fixed-top navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"></a>
+  </nav>
+</body>
+
+
+<!--ナビゲーションバーの配置:ページ上部に到達すると固定-->
+<nav class="navbar sticky-top navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">ブランド</a>
+</nav>
+
+
+
+
+<script src="js/jquery-3.3.1.slim.min.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
