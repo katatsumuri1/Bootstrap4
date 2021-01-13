@@ -1,0 +1,219 @@
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>Hello, world!</title>
+</head>
+<body>
+
+<!--入力コントロールのサイズを調整する-->
+<label for="input1">大サイズのテキスト入力欄</label>
+<input class="form-control form-control-lg" id="input1" type="text" placeholder="form-control-lg">
+  ・・・中略・・・
+</input>
+<label for="input2">標準サイズのテキスト入力欄</label>
+<input class="form-control" id="input2" type="text" placeholder="Default size">
+・・・中略・・・
+</input>
+<label for="input3">小サイズのテキスト入力欄</label>
+<input class="form-control form-control-sm" id="input3" type="text" placeholder="form-control-sm">
+  ・・・中略・・・
+</input>
+<label for="select1">大サイズのプルダウンメニュー</label>
+<select class="form-control form-control-lg" id="selecet1">
+  <option>form-control-lg</option>
+</select>
+・・・中略・・・
+<label for="select2">標準サイズのプルダウンメニュー</label>
+<select class="form-control" id="select2">
+  <option>Default size</option>
+</select>
+・・・中略・・・
+<label for="select3">小サイズのプルダウンメニュー</label>
+<select class="form-control form-control-sm" id="select3">
+  <option>form-control-sm</option>
+</select>
+
+
+<!--レンジ入力欄を作成する-->
+<div class="form-group">
+  <label for="formControlRange">レンジ入力の例</label>
+  <input type="range" class="form-control-range" id="formControlRange">
+</div>
+
+<!--読み取り専用のテキストを表示する(form-readonly.hmtl)-->
+<input class="form-control" type="text" id="inpu1" placeholder="読み取り専用のテキスト" readonly>
+
+
+<!--読み取り専用テキストの枠を非表示にする-->
+<input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com"></input>
+
+
+チェックボックスとラジオボタン(form-check-stacked.html)
+<!--チェックボックス-->
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value=""id="check1">
+  <label class="form-check-label" fory="check1">
+    チェック１
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value=""id="check2" disabled>
+  <label class="form-check-label" fory="check2">
+    チェック2(無効)
+  </label>
+</div>
+<!--ラジオボタン-->
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="radios" id="radios1" value="option1 checked">
+  <label class="form-check-label" for="radios1">
+    オプション１
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="radios" id="radios2" value="option2">
+  <label class="form-check-label" for="radios2">
+    オプション2
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="radios" id="radios3" value="option3 disabled">
+  <label class="form-check-label" for="radios3">
+    オプション3(無効)
+  </label>
+</div>
+
+<!--選択項目を横並びに変更する(form-check-inline.html)-->
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="check1" value="option1">
+  <label class="form-check-label" fory="checkbox1">1</label>
+  
+  <input class="form-check-input" type="checkbox" id="check2" value="option2">
+  <label class="form-check-label" fory="checkbox1">2</label>
+  
+  <input class="form-check-input" type="checkbox" id="check3" value="option3">
+  <label class="form-check-label" fory="checkbox1">3</label>
+</div>
+<!--ラベル表示のない項目を作成する-->
+<div class="form-check">
+  <input class="form-check-input position-static" type="checkbox" value="option1" id="blankCheckbox" value="option1" aria-label="...">
+</div>
+<div class="form-check">
+  <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+</div>
+
+<!--グリッドレイアウトを組み込む-->
+<form>
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="姓">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="名">
+    </div>
+  </div>
+</form>
+
+<!--コンパクトなカラム間隔のフォームを作成する-->
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail">メールアドレス</label>
+      <input type="email" class="form-control" id="inputEmail" placeholder="メールアドレスを入力">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword">パスワード</label>
+      <input type="passoword" class="form-control" id="inputPassword" placeholder="パスワードを入力">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputState">国</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose..</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">郵便番号</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputCity">都道府県</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+  </div>
+</form>
+
+<!--ラベルサイズを調整する-->
+<label for="labelSm" class="col-sm-3 col-form-label col-form-label-sm">小サイズ: col-form-label-sm</label>
+<label for="labelDefault" class="col-sm-3 col-form-label">標準サイズ</label>
+<label for="labelSm" class="col-sm-3 col-form-label col-form-label-lg">大サイズ: col-form-label-lg</label>
+
+<!--自動サイズ調整のカラムを作成する-->
+<form>
+  <div class="form-row align-items-center">
+    <div class="col-auto">
+      <label class="sr-only" fory="inputName">氏名</label>
+      <input type="text" class="form-control mb-2" id="inputName" placeholder="氏名を入力">
+    </div>
+    <div class="col-auto">
+      <label class="sr-only" fory="inputUserName">ユーザーネーム</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input type="text" class="form-control" id="inputUserName" placeholder="ユーザーネームを入力">
+      </div>
+    </div>
+    <div class="col-auto">
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="check">
+        <label class="form-check-label" for="check">
+          チェックする
+        </label>
+      </div>
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary mb-2">送信</button>
+    </div>
+  </div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/jquery-3.3.1.slim.min.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
