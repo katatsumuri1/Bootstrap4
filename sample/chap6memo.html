@@ -217,7 +217,7 @@
     <label class="custom-control-label" for="option2">オプション2</label>
   </div>
 </form>
-<!--不確定のチェックボックス-->a
+<!--不確定のチェックボックス-->
 <form>
   <!--カスタムフォームのチェックボックス-->
   <div class="custom-control custom-checkbox mb-3">
@@ -234,23 +234,107 @@
   </div>
 </form>
 
+<!--入力グループのサイズ調整-->
+<!--小サイズのグループ-->
+<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <spann class="input-group-text" id="inputGroup-sizing-sm">Small</spann>
+  </div>
+  <input type="text" class="form-control" aria=="Small" aria-describedby="inputGroup-sizing-sm">
+</div>
+<div class="input-group input-group ">
+  <div class="input-group-prepend">
+    <spann class="input-group-text" id="inputGroup-sizing">Normal</spann>
+  </div>
+  <input type="text" class="form-control" aria=="Small" aria-describedby="inputGroup-sizing">
+</div>
+<div class="input-group input-group-lg">
+  <div class="input-group-prepend">
+    <spann class="input-group-text" id="inputGroup-sizing-lg">Large</spann>
+  </div>
+  <input type="text" class="form-control" aria=="Small" aria-describedby="inputGroup-sizing-lg">
+</div>
+
+<!--チェックボックスやラジオボタン付きのアドオン-->
+<div class="input-grouo">
+  <div class="input-group-prepend">
+    <div class="input-group-text">
+      <input type="checkbox" aria-label="次のテキスト入力用のチェックボックス">
+    </div>
+  </div>
+  <input type="text" class="form-control" aria-label="チェックボックス付きテキスト入力欄">
+</div>
+
+<!--ラジオボタン付きテキスト入力欄-->
+<div class="input-group">
+  <div class="input-group-prepend">
+    <div class="input-group-text">
+      <input type="radio" aria-label="次のテキスト入力用のラジオボタン">
+    </div>
+  </div>
+  <input type="text" class="form-control" aria-label="ラジオボタン付きテキスト入力欄">
+</div>
+
+
+<!--複数の入力コントロール-->
+<div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="...">姓名</span>
+  </div>
+  <input type="text" class="form-control" placeholder="姓">
+  <input type="text" class="form-control" placeholder="名">
+</div>
 
 
 
+<!--複数のアドオンを組み合わせる-->
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <div class="input-group-text">
+      <input type="radio" aria-label="次のテキスト入力用のラジオボタン">
+    </div>
+    <span class="input-group-text">&yen;</span>
+    <span class="input-group-text">0.00</span>
+  </div>
+  <input type="text" class="form-control" aria-label="金額">
+</div>
 
+<!--ボタン付きアドオン-->
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="検索キーワード" aria-label="検索キーワード" aria-describedby="basic-addon1">
+  <div class="input-group-append">
+    <button class="btn btn-secondary" type="button">検索</button>
+  </div>
+</div>
 
+<!--ドロップダウン付きアドオン-->
+<div class="input-group">
+  <input type="text" class="form-control" aria-label="ドロップダウン付きテキスト入力欄">
+    <div class="input-group-append">
+      <button class="btn btn-secondary dropdown-toggle" type="buton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">アクション</button>
+      <div class="dropdown-menu">
+        <a class="doropdown-item" href="#">リンク1</a>
+        <a class="doropdown-item" href="#">リンク2</a>
+      </div>
+    </div>
+  </div>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
+<!--スプリットボタンのアドオン-->
+<div class="input-group">
+  <input type="text" class="form-control" aria-label="スプリットボタン付きテキスト入力欄">
+    <div class="input-group-append">
+      <button type="button" class="btn btn-secondary">アクション</button>
+      <button class="btn btn-secondary dropdown-toggle" type="buton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">ドロップダウン切り替え</span>
+      </button>
+      <div class="dropdown-menu">
+        <a class="doropdown-item" href="#">リンク1</a>
+        <a class="doropdown-item" href="#">リンク2</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
