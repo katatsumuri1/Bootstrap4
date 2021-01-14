@@ -180,11 +180,59 @@
   </div>
 </form>
 
+<!--ヘルプテキストを表示する-->
+<form>
+  <label for="inputPassword">パスワード</label>
+  <input type="password" id="inputPassword" class="form-control" aria-describedby="passwordHelpBlock">
+  <small id="passwordHelpBlock" class="form-text text-muted">パスワードは8~20文字で、文字と数字を含み、スペース、特殊文字、または絵文字を含むことはできません</small>
+</form>
 
+<!--Bootstrapのフォームの入力検証機能を使用する(form-validation-custom.html)-->
+<form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validation01">姓</label>
+      <input type="text" class="form-control" id="validation01" placeholder="First name" value="山田" required>
+      <div class="valid-feedback">
+        入力済み
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">送信する</button>
+</form>
 
-
-
-
+<!--チェックボックスとラジオボタンを作成する(form-custom-input.html)-->
+<form>
+  <!--カスタムフォームのチェックボックス-->
+  <div class="custom-control custom-checkbox mb-3">
+    <input type="checkbox" class="custom-control-input" id="customCheck1">
+    <label class="custom-control-label" for="customCheck1">チェックする</label>
+  </div>
+  <div class="custom-control custom-radio">
+    <input type="radio" id="option1" name="option" class="custom-control-input">
+    <label class="custom-control-label" for="option1">オプション1</label>
+  </div>
+  <div class="custom-control custom-radio">
+    <input type="radio" id="option2" name="option" class="custom-control-input">
+    <label class="custom-control-label" for="option2">オプション2</label>
+  </div>
+</form>
+<!--不確定のチェックボックス-->a
+<form>
+  <!--カスタムフォームのチェックボックス-->
+  <div class="custom-control custom-checkbox mb-3">
+    <input type="checkbox" class="custom-control-input" id="customCheck1">
+    <label class="custom-control-label" for="customCheck1">チェックする</label>
+  </div>
+  <div class="custom-control custom-radio">
+    <input type="radio" id="option1" name="option" class="custom-control-input">
+    <label class="custom-control-label" for="option1">オプション1</label>
+  </div>
+  <div class="custom-control custom-radio">
+    <input type="radio" id="option2" name="option" class="custom-control-input">
+    <label class="custom-control-label" for="option2">オプション2</label>
+  </div>
+</form>
 
 
 
