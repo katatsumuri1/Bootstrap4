@@ -336,12 +336,334 @@
   </div>
 </div>
 
+<!--ボタン-->
+
+<!--a要素やinput要素でボタンを作成する(button-tags.html)-->
+<a class="btn btn-primary" href="#" role="button">a要素ボタン</a>
+<input class="btn btn-primary" type="button" value="inputボタン">
+<input class="btn btn-primary" type="submit" value="submitボタン">
+<input class="btn btn-primary" type="reset" value="resetボタン">
 
 
+<!--アウトラインボタンを作成する-->
+<button type="button" class="btn btn-outline-primary">outline-primary</button>
 
 
+<!--ボタンサイズを変更する-->
+<button class="btn btn-primary btn-lg">大サイズ</button>
+<button class="btn btn-primary ">通常サイズ</button>
+<button class="btn btn-primary btn-sm">小サイズ</button>
 
 
+<!--ブロックレベルのボタンを作成する-->
+<button type="button" class="btn btn-primary btn-lg btn-block">ブロックレベルボタン</button>
+
+<!--アクティブ状態のボタンを作成する-->
+<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">アクティブボタン</a>
+
+<!--無効状態のボタンを作成する-->
+<button type="button" class="btn btn-primary btn-lg" disabled>無効状態のボタン</button>
+
+<!--切り替えボタンを作成する-->
+<button type="button" class="btn btn-primary active" data-toggle="button" aria-pressed="true" autocomplete="off">プッシュ状態</button>
+<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">未プッシュ状態</button>
+
+<!--チェックボックスボタンのスタイルに変更する-->
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="checkbox" checked autocomplete="off">チェックボックス1(選択済み)
+  </label>
+  <label class="btn btn-secondary">
+    <input type="checkbox" autocomplete="off">チェックボックス1
+  </label>
+  <label class="btn btn-secondary">
+    <input type="checkbox" autocomplete="off">チェックボックス1
+  </label>
+</div>  
+
+<!--ラジオボタンのスタイルに変更する-->
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="radio" checked autocomplete="off">ラジオボタン1(選択済み)
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" autocomplete="off">ラジオボタン1
+  <label class="btn btn-secondary ">
+    <input type="radio" autocomplete="off">ラジオボタン1
+  </label>
+</div>
+
+
+<!--クリックするとボタンをプッシュ状態に切り替える-->
+<button type="button" class="btn btn-primary" aria-pressed="true" autocomplete="off" id="toggle-btn">押してね</button>
+<script>
+  $("#toggle-btn").on('click',function(){
+    $(this).button('toggle').text('押したね')
+  });
+</script>
+
+<!--ボタングループの基本的な使用例(btn-group-basic.html)-->
+<div class="btn-group" role="group" aria-label="基本的な使用例">
+  <button type="button" class="btn btn-secondary">左ボタン</button>
+  <button type="button" class="btn btn-secondary">中ボタン</button>
+  <button type="button" class="btn btn-secondary">右ボタン</button>
+</div>
+
+<!--ボタンツールバーを作成する-->
+<div class="btn-toolbar" role="toolbar" aria-label="ボタンツールバー">
+  <!--ボタングループ1-->
+  <div class="btn-group mr-2" role="group" aria-label="ボタングループ1">
+    <button type="button" class="btn btn-secondary">button1</button>
+  </div>
+  <!--ボタングループ2-->
+  <div class="btn-group mr-2" role="group" aria-label="ボタングループ2">
+    <button type="button" class="btn btn-secondary">button2</button>
+  </div>
+  <!--ボタングループ4-->
+  <div class="btn-group" role="group" aria-label="ボタングループ3">
+    <button type="button" class="btn btn-secondary">button4</button>
+  </div>
+  <!--ボタングループ5-->
+  <div class="btn-group" role="group" aria-label="ボタングループ5">
+    <button type="button" class="btn btn-secondary">button5</button>
+  </div>
+  <!--ボタングループ6-->
+  <div class="btn-group" role="group" aria-label="ボタングループ6">
+    <button type="button" class="btn btn-secondary">button6</button>
+  </div>
+  <!--ボタングループ7-->
+  <div class="btn-group" role="group" aria-label="ボタングループ7">
+    <button type="button" class="btn btn-secondary">button7</button>
+  </div>
+ </div>
+
+<!--入力グループを組み込む-->
+<!--ボタンツールバー-->
+<div class="btn-toolbar mb-3" role="toolbar" aria-label="ボタンツールバー">
+  <!--ボタングループ-->
+  <!--ボタングループ1-->
+  <div class="btn-group mr-2" role="group" aria-label="ボタングループ1">
+    <button type="button" class="btn btn-secondary">button1</button>
+  </div>
+  <!--ボタングループ2-->
+  <div class="btn-group mr-2" role="group" aria-label="ボタングループ2">
+    <button type="button" class="btn btn-secondary">button2</button>
+  </div>
+  <!--ボタングループ4-->
+  <div class="btn-group mr-2" role="group" aria-label="ボタングループ3">
+    <button type="button" class="btn btn-secondary">button4</button>
+  </div>
+  <!--入力グループ-->
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <div class="input-group-text" id="btnGroupAddon">@</div>
+    </div>
+    <input type="text" class="form-control" placeholder="入力グループの例" aria-label="入力グループの例" aria-describedby="btnGroupAddon">
+  </div>
+</div>
+
+<!--ボタングループのサイズを変更する-->
+<!--<大サイズ>-->
+<div class="btn-group-lg" role="group" aria-label="グループ1">
+  <button type="button" class="btn btn-secondary">左ボタン</button>
+  <button type="button" class="btn btn-secondary">中ボタン</button>
+  <button type="button" class="btn btn-secondary">右ボタン</button>
+</div>
+
+<!--<標準サイズ>-->
+<div class="btn-group" role="group" aria-label="グループ2">
+  <button type="button" class="btn btn-secondary">左ボタン</button>
+  <button type="button" class="btn btn-secondary">中ボタン</button>
+  <button type="button" class="btn btn-secondary">右ボタン</button>
+</div>
+
+<!--<小サイズ>-->
+<div class="btn-group-sm" role="group" aria-label="グループ3">
+  <button type="button" class="btn btn-secondary">左ボタン</button>
+  <button type="button" class="btn btn-secondary">中ボタン</button>
+  <button type="button" class="btn btn-secondary">右ボタン</button>
+</div>
+
+
+<!--ドロップダウンメニューを入れ子にする(btn-group-nesting.html)-->
+<div class="btn-group" role="group" aria-label="ドロップダウンを含むボタングループ">
+  <button type="button" class="btn btn-secondary">1</button>
+  <button type="button" class="btn btn-secondary">2</button>
+  <div class="btn-group" role="group">
+    <!--切り替えボタン-->
+    <button id="drop1" type="button" class="btn btn-secondary doropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      ドロップダウン
+    </button>
+    <!--ドロップダウンメニュー-->
+    <div class="dropdown-menu" aria-labelledby="drop1">
+      <a class="dropdown-item" href="#">リンク1</a>
+      <a class="dropdown-item" href="#">リンク2</a>
+    </div>
+  </div>
+</div>
+
+<!--垂直方向のボタングループ-->
+<div class="btn-group-vertical">
+  <button type="button" class="btn btn-secondary">上ボタン</button>
+  <button type="button" class="btn btn-secondary">中ボタン</button>
+  <button type="button" class="btn btn-secondary">下ボタン</button>
+</div>
+
+<!--ドロップダウンの基本的な使用方法-->
+<!--ドロップダウン-->
+<div class="dropdown">
+  <!--切り替えボタン-->
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    ドロップダウン
+  </button>
+  <!--ドロップダウンメニュー-->
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">メニュー01</a>
+      <a class="dropdown-item" href="#">メニュー02</a>
+      <a class="dropdown-item" href="#">メニュー03</a>
+    </div>
+  </div>
+</div>
+
+<!--切り替えボタンにa要素を使用したドロップダウンの切り替えボタン-->
+<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  ドロップダウン
+</a>
+
+<!--ボタングループに組み込むドロップダウン(dropdown-btn-group.html)-->
+<!--ボタングループ-->
+<div class="btn-group">
+  <!--切り替えボタン-->
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup=="true" aria-expanded="false">
+    ドロップダウン
+  </button>
+  <!--ドロップダウンメニュー-->
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">メニュー01</a>
+    <a class="dropdown-item" href="#">メニュー02</a>
+    <a class="dropdown-item" href="#">メニュー03</a>
+  </div>
+</div>
+
+
+<!--スプリットボタンのドロップダウン-->
+<div class="btn-group">
+  <!--ボタン本体-->
+  <button type="button" class="btn btn-secondary">
+    スプリットボタン
+  </button>
+  <!--切り替え用アイコン-->
+  <button type="button" class="btn btn-secondary dropdown-toggle-split" data-toggle="dropdown" aria-haspopup=="true" aria-expanded="false">
+    <span class="sr-only">ドロップダウン切��替え</span>
+  </button>
+  <!--ドロップダウンメニュー-->
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">メニュー01</a>
+    <a class="dropdown-item" href="#">メニュー02</a>
+    <a class="dropdown-item" href="#">メニュー03</a>
+  </div>
+</div>
+
+<!--上方向へのドロップ-->
+<div class="btn-group dropup">
+  <!--ボタン本体-->
+  <!--切り替えボタン-->
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup=="true" aria-expanded="false">
+    上方向へのドロップ
+  </button>
+  <!--ドロップダウンメニュー-->
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">メニュー01</a>
+    <a class="dropdown-item" href="#">メニュー02</a>
+    <a class="dropdown-item" href="#">メニュー03</a>
+  </div>
+</div>
+
+<!--左方向へのドロップ-->
+<div class="btn-group dropleft">
+  <!--ボタン本体-->
+  <!--切り替えボタン-->
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup=="true" aria-expanded="false">
+    左方向へのドロップ
+  </button>
+  <!--ドロップダウンメニュー-->
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">メニュー01</a>
+    <a class="dropdown-item" href="#">メニュー02</a>
+    <a class="dropdown-item" href="#">メニュー03</a>
+  </div>
+</div>
+
+<!--右方向へのドロップ-->
+<div class="btn-group dropright">
+  <!--ボタン本体-->
+  <!--切り替えボタン-->
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup=="true" aria-expanded="false">
+    右方向へのドロップ
+  </button>
+  <!--ドロップダウンメニュー-->
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">メニュー01</a>
+    <a class="dropdown-item" href="#">メニュー02</a>
+    <a class="dropdown-item" href="#">メニュー03</a>
+  </div>
+</div>
+
+<!--メニュー項目にbutton要素を使用する-->
+<!--ドロップダウン-->
+<div class="dropdown">
+  <!--切り替えボタン-->
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    ドロップダウン
+  </button>
+  <!--ドロップダウンメニュー-->
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <button class="dropdown-item" type="button">メニュー01</button>
+    <button class="dropdown-item" type="button">メニュー02</button>
+    <button class="dropdown-item" type="button">メニュー03</button>
+  </div>
+</div>
+
+<!--メニューの位置をボタンと右揃えにする-->
+<!--ボタングループ-->
+<div class="btn-group">
+  <!--切り替えボタン-->
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    メニューの位置を右揃えにしたドロップダウン
+  </button>
+  <!--ドロップダウンメニュー-->
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">メニュー01</a>
+    <a class="dropdown-item" href="#">メニュー02</a>
+    <a class="dropdown-item" href="#">メニュー03</a>
+  </div>
+</div>
+
+<!--ドロップダウンメニューに様々な要素を組み込む-->
+<!--ボタングループ-->
+<div class="btn-group">
+  <!--切り替えボタン-->
+  <button class="btn btn-secondary dropdown-toggle" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    ドロップダウン
+<!--ドロップダウンメニュー-->
+  <div class="dropdown-menu">
+    <h6 class="dropdown-header">ドロップダウンメニューの見出し</h6>
+    <form class="px-4 py-3">
+      
+    </form>
+  <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">初めての方</a>
+    <a class="dropdown-item" href="#">パスワードをお忘れの方</a>
+  </div>
+</div>
+
+<!--メニュー項目に自由形式のテキストを配置する-->
+<div class="dropdown-menu p-3 text-muted" style="max-width: 300px">
+  <p>ドロップダウンメニューないのテキスト１</p>
+  <p class="mb-0">ドロップダウンメニュー内のテキストその2</p>
+</div>
 
 
 
