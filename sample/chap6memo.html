@@ -509,12 +509,161 @@
   <button type="button" class="btn btn-secondary">下ボタン</button>
 </div>
 
+<!--ドロップダウンの基本的な使用方法-->
+<!--ドロップダウン-->
+<div class="dropdown">
+  <!--切り替えボタン-->
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    ドロップダウン
+  </button>
+  <!--ドロップダウンメニュー-->
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">メニュー01</a>
+      <a class="dropdown-item" href="#">メニュー02</a>
+      <a class="dropdown-item" href="#">メニュー03</a>
+    </div>
+  </div>
+</div>
+
+<!--切り替えボタンにa要素を使用したドロップダウンの切り替えボタン-->
+<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  ドロップダウン
+</a>
+
+<!--ボタングループに組み込むドロップダウン(dropdown-btn-group.html)-->
+<!--ボタングループ-->
+<div class="btn-group">
+  <!--切り替えボタン-->
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup=="true" aria-expanded="false">
+    ドロップダウン
+  </button>
+  <!--ドロップダウンメニュー-->
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">メニュー01</a>
+    <a class="dropdown-item" href="#">メニュー02</a>
+    <a class="dropdown-item" href="#">メニュー03</a>
+  </div>
+</div>
 
 
+<!--スプリットボタンのドロップダウン-->
+<div class="btn-group">
+  <!--ボタン本体-->
+  <button type="button" class="btn btn-secondary">
+    スプリットボタン
+  </button>
+  <!--切り替え用アイコン-->
+  <button type="button" class="btn btn-secondary dropdown-toggle-split" data-toggle="dropdown" aria-haspopup=="true" aria-expanded="false">
+    <span class="sr-only">ドロップダウン切��替え</span>
+  </button>
+  <!--ドロップダウンメニュー-->
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">メニュー01</a>
+    <a class="dropdown-item" href="#">メニュー02</a>
+    <a class="dropdown-item" href="#">メニュー03</a>
+  </div>
+</div>
 
+<!--上方向へのドロップ-->
+<div class="btn-group dropup">
+  <!--ボタン本体-->
+  <!--切り替えボタン-->
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup=="true" aria-expanded="false">
+    上方向へのドロップ
+  </button>
+  <!--ドロップダウンメニュー-->
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">メニュー01</a>
+    <a class="dropdown-item" href="#">メニュー02</a>
+    <a class="dropdown-item" href="#">メニュー03</a>
+  </div>
+</div>
 
+<!--左方向へのドロップ-->
+<div class="btn-group dropleft">
+  <!--ボタン本体-->
+  <!--切り替えボタン-->
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup=="true" aria-expanded="false">
+    左方向へのドロップ
+  </button>
+  <!--ドロップダウンメニュー-->
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">メニュー01</a>
+    <a class="dropdown-item" href="#">メニュー02</a>
+    <a class="dropdown-item" href="#">メニュー03</a>
+  </div>
+</div>
 
+<!--右方向へのドロップ-->
+<div class="btn-group dropright">
+  <!--ボタン本体-->
+  <!--切り替えボタン-->
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup=="true" aria-expanded="false">
+    右方向へのドロップ
+  </button>
+  <!--ドロップダウンメニュー-->
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">メニュー01</a>
+    <a class="dropdown-item" href="#">メニュー02</a>
+    <a class="dropdown-item" href="#">メニュー03</a>
+  </div>
+</div>
 
+<!--メニュー項目にbutton要素を使用する-->
+<!--ドロップダウン-->
+<div class="dropdown">
+  <!--切り替えボタン-->
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    ドロップダウン
+  </button>
+  <!--ドロップダウンメニュー-->
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <button class="dropdown-item" type="button">メニュー01</button>
+    <button class="dropdown-item" type="button">メニュー02</button>
+    <button class="dropdown-item" type="button">メニュー03</button>
+  </div>
+</div>
+
+<!--メニューの位置をボタンと右揃えにする-->
+<!--ボタングループ-->
+<div class="btn-group">
+  <!--切り替えボタン-->
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    メニューの位置を右揃えにしたドロップダウン
+  </button>
+  <!--ドロップダウンメニュー-->
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">メニュー01</a>
+    <a class="dropdown-item" href="#">メニュー02</a>
+    <a class="dropdown-item" href="#">メニュー03</a>
+  </div>
+</div>
+
+<!--ドロップダウンメニューに様々な要素を組み込む-->
+<!--ボタングループ-->
+<div class="btn-group">
+  <!--切り替えボタン-->
+  <button class="btn btn-secondary dropdown-toggle" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    ドロップダウン
+<!--ドロップダウンメニュー-->
+  <div class="dropdown-menu">
+    <h6 class="dropdown-header">ドロップダウンメニューの見出し</h6>
+    <form class="px-4 py-3">
+      
+    </form>
+  <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">初めての方</a>
+    <a class="dropdown-item" href="#">パスワードをお忘れの方</a>
+  </div>
+</div>
+
+<!--メニュー項目に自由形式のテキストを配置する-->
+<div class="dropdown-menu p-3 text-muted" style="max-width: 300px">
+  <p>ドロップダウンメニューないのテキスト１</p>
+  <p class="mb-0">ドロップダウンメニュー内のテキストその2</p>
+</div>
 
 
 
