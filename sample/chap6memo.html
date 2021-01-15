@@ -402,8 +402,112 @@
   });
 </script>
 
+<!--ボタングループの基本的な使用例(btn-group-basic.html)-->
+<div class="btn-group" role="group" aria-label="基本的な使用例">
+  <button type="button" class="btn btn-secondary">左ボタン</button>
+  <button type="button" class="btn btn-secondary">中ボタン</button>
+  <button type="button" class="btn btn-secondary">右ボタン</button>
+</div>
+
+<!--ボタンツールバーを作成する-->
+<div class="btn-toolbar" role="toolbar" aria-label="ボタンツールバー">
+  <!--ボタングループ1-->
+  <div class="btn-group mr-2" role="group" aria-label="ボタングループ1">
+    <button type="button" class="btn btn-secondary">button1</button>
+  </div>
+  <!--ボタングループ2-->
+  <div class="btn-group mr-2" role="group" aria-label="ボタングループ2">
+    <button type="button" class="btn btn-secondary">button2</button>
+  </div>
+  <!--ボタングループ4-->
+  <div class="btn-group" role="group" aria-label="ボタングループ3">
+    <button type="button" class="btn btn-secondary">button4</button>
+  </div>
+  <!--ボタングループ5-->
+  <div class="btn-group" role="group" aria-label="ボタングループ5">
+    <button type="button" class="btn btn-secondary">button5</button>
+  </div>
+  <!--ボタングループ6-->
+  <div class="btn-group" role="group" aria-label="ボタングループ6">
+    <button type="button" class="btn btn-secondary">button6</button>
+  </div>
+  <!--ボタングループ7-->
+  <div class="btn-group" role="group" aria-label="ボタングループ7">
+    <button type="button" class="btn btn-secondary">button7</button>
+  </div>
+ </div>
+
+<!--入力グループを組み込む-->
+<!--ボタンツールバー-->
+<div class="btn-toolbar mb-3" role="toolbar" aria-label="ボタンツールバー">
+  <!--ボタングループ-->
+  <!--ボタングループ1-->
+  <div class="btn-group mr-2" role="group" aria-label="ボタングループ1">
+    <button type="button" class="btn btn-secondary">button1</button>
+  </div>
+  <!--ボタングループ2-->
+  <div class="btn-group mr-2" role="group" aria-label="ボタングループ2">
+    <button type="button" class="btn btn-secondary">button2</button>
+  </div>
+  <!--ボタングループ4-->
+  <div class="btn-group mr-2" role="group" aria-label="ボタングループ3">
+    <button type="button" class="btn btn-secondary">button4</button>
+  </div>
+  <!--入力グループ-->
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <div class="input-group-text" id="btnGroupAddon">@</div>
+    </div>
+    <input type="text" class="form-control" placeholder="入力グループの例" aria-label="入力グループの例" aria-describedby="btnGroupAddon">
+  </div>
+</div>
+
+<!--ボタングループのサイズを変更する-->
+<!--<大サイズ>-->
+<div class="btn-group-lg" role="group" aria-label="グループ1">
+  <button type="button" class="btn btn-secondary">左ボタン</button>
+  <button type="button" class="btn btn-secondary">中ボタン</button>
+  <button type="button" class="btn btn-secondary">右ボタン</button>
+</div>
+
+<!--<標準サイズ>-->
+<div class="btn-group" role="group" aria-label="グループ2">
+  <button type="button" class="btn btn-secondary">左ボタン</button>
+  <button type="button" class="btn btn-secondary">中ボタン</button>
+  <button type="button" class="btn btn-secondary">右ボタン</button>
+</div>
+
+<!--<小サイズ>-->
+<div class="btn-group-sm" role="group" aria-label="グループ3">
+  <button type="button" class="btn btn-secondary">左ボタン</button>
+  <button type="button" class="btn btn-secondary">中ボタン</button>
+  <button type="button" class="btn btn-secondary">右ボタン</button>
+</div>
 
 
+<!--ドロップダウンメニューを入れ子にする(btn-group-nesting.html)-->
+<div class="btn-group" role="group" aria-label="ドロップダウンを含むボタングループ">
+  <button type="button" class="btn btn-secondary">1</button>
+  <button type="button" class="btn btn-secondary">2</button>
+  <div class="btn-group" role="group">
+    <!--切り替えボタン-->
+    <button id="drop1" type="button" class="btn btn-secondary doropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      ドロップダウン
+    </button>
+    <!--ドロップダウンメニュー-->
+    <div class="dropdown-menu" aria-labelledby="drop1">
+      <a class="dropdown-item" href="#">リンク1</a>
+      <a class="dropdown-item" href="#">リンク2</a>
+    </div>
+  </div>
+</div>
+
+<!--垂直方向のボタングループ-->
+<div class="btn-group-vertical">
+  <button type="button" class="btn btn-secondary">上ボタン</button>
+  <button type="button" class="btn btn-secondary">中ボタン</button>
+  <button type="button" class="btn btn-secondary">下ボタン</button>
+</div>
 
 
 
