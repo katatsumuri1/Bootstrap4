@@ -110,6 +110,88 @@
   <!--フェードで遷移するカルーセル(carousel-crossfade)-->
   <div id="carouselSample" class="carousel slide carousel-fade" data-ride="carousel">
   
+  
+  <!--カルーセルをjavascript経由で呼び出す-->
+  <div id="carouselExample" class="carousel slide"><!--data-ride="carousel"は不要-->
+    ・・・中略・・・
+  </div>
+  <script>
+    $(function(){
+      $('#carouselExample').carousel();
+    });
+  </script>
+  
+  <!--データ属性でオプションを指定-->
+  <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="1000">
+    JavaScriptでオプションを渡す場合は次のように指定する
+  
+  <div id="carouselExample" class="carousel slide">
+    ・・・中略・・・
+  </div>
+  <script>
+    $(function(){
+      $('#carouselExample').carousel({
+        interval: 1000
+      });
+    });
+  </script>
+  
+  <!--カルーセルメソッドの例(carousel-methods.html)-->
+  <!--コントロールボタン-->
+  <div class="control-buttons my-3">
+    <input type="button" class="btn btn-primary start-slide"  value="循環開始">
+    <input type="button" class="btn btn-primary pause-slide"  value="循環停止">
+    <input type="button" class="btn btn-primary prev-slide"   value="前へ循環">
+    <input type="button" class="btn btn-primary next-slide"   value="次へ循環">
+    <input type="button" class="btn btn-primary slide-first"  value="第1スライド">
+    <input type="button" class="btn btn-primary slide-second" value="第2スライド">
+    <input type="button" class="btn btn-primary slide-third"  value="第3スライド">
+  </div>
+  
+  <script>
+    $(function(){
+    //循環開始
+    $(".start-slide").on('click',function(){
+      $("#carousel").carousel('cycle');
+    });
+    //一時停止
+    $(".pause-slide").on('click',function(){
+      $("#carousel").carousel('pause');
+    });
+    //前へ循環
+    $(".prev-slide").on('click',function(){
+      $("#carousel").carousel('prev');
+    });
+    //次へ循環
+    $(".next-slide").on('click',function(){
+      $("#carousel").carousel('next');
+    });
+    //特定のフレームに循環
+    $(".slide-first").on('click',function(){
+      $("#carousel").carousel(0);
+    });
+    $(".slide-second").on('click',function(){
+      $("#carousel").carousel(1);
+    });
+    $(".slide-third").on('click',function(){
+      $("#carousel").carousel(2);
+    });
+    });
+  </script>
+  
+  <!--カルーセルのイベント: slid.bs.carousel(carousel-events.html)-->
+  <script>
+    $('#carouselExample').on('slide.bs.carousel', function(){
+      $('#carouselExample.carousel-caption').hide();
+    });
+    
+    $('carouselExample').on('slid.bs.carousel',function(){
+      $('#carouselExample. carousel-caption').show();  
+    });
+  </script>
+  
+  
+  
   <script src="js/jquery-3.3.1.slim.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
