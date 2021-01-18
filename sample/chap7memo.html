@@ -191,7 +191,125 @@
   </script>
   
   
-  
+  <!--折りたたみの基本的な使用例(collapse-basic)-->
+  <!--切り替えボタン-->
+  <p>
+    <!--a要素とhref属性による切り替えボタン-->
+    <a class="btn btn-secondary" data-toggle="collapse" href="#collapseContent01" role="button"
+ aria-expanded="false" aria-controls="collapseContent01">a要素とhere属性によるボタン
+ </p>
+ <!--切り替える対象となるコンテンツ-->
+ <div class="collapse" id="collapseContent01">
+   <div class="card card-body">
+     a要素の切り替えボタンをクリックする事で表示と非表示とが切り替わるコンテンツ
+   </div>
+ </div>
+ 
+ <!--button要素とdata-target属性による切り替えボタン-->
+ <p>
+   <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseContent02" aria-expanded="false" aria-controls="collapseContent02">
+     button要素とdata-target属性によるボタン
+   </button>
+ </p>
+ <!--切り替え対象となるコンテンツ-->
+ <div class="collapse" id="collapseContent02">
+   <div class="card card-body">
+     button要素の切り替えボタンをクリックする事で表示と非表示とが切り替わるコンテンツ
+   </div>
+ </div>
+ 
+ 
+ <!--複数の要素の表示と非表示とを切り替える(collapse-multiple.html)-->
+ <p>
+   <!--ID「content-01」の切り替えボタン-->
+    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#content-01" aria-expanded="false" aria-controls="content-01">
+      IDcontent-01を表示切り替え
+    </button>
+        <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#content-02" aria-expanded="false" aria-controls="content-02">
+      IDcontent-02を表示切り替え
+    </button>
+    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target=".contents" aria-expanded="false" aria-controls="contents-01 contents-02">
+      クラスcontentsを同時に表示切り替え
+    </button>
+ </p>
+ <div class="row">
+   <div class="col">
+     <!--ID content-01、クラスcontents-->
+     <div class="collapse contents" id="content-01">
+       <div class="card card-body">
+         ID content-01 class contents
+       </div>
+     </div>
+   </div>
+   <div class="col">
+     <!--ID content-02、クラスcontents-->
+     <div class="collapse contents" id="content-02">
+       <div class="card card-body">
+         ID content-02 class contents
+       </div>
+     </div>
+   </div>
+ </div>
+ 
+ <!--基本的なアコーディオン-->
+ <div class="accordion" id="accordion">
+   <!--カード01-->
+   <div class="card">
+     <!--カードヘッダー-->
+     <div class="card-header" id="headingOne">
+       <h5 class="mb-0">
+         <button class="btn btn-lnik" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+           カード01の切り替えボタン
+         </button>
+       </h5>
+     </div>
+     <!--コンテンツ-->
+     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+       <div class="card-body">
+         中略 
+       </div>
+     </div>
+   </div>
+   <!--カード02-->
+   <div class="card">
+     <!--カードヘッダー-->
+     <div class="card-header" id="headingTwo">
+       <h5 class="mb-0">
+         <button class="btn btn-lnik" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+           カード02の切り替えボタン
+         </button>
+       </h5>
+     </div>
+     <!--コンテンツ-->
+     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+       <div class="card-body">
+         中略 
+       </div>
+     </div>
+   </div>
+    <!--カード03-->
+   <div class="card">
+     <!--カードヘッダー-->
+     <div class="card-header" id="headingThree">
+       <h5 class="mb-0">
+         <button class="btn btn-lnik" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+           カード03の切り替えボタン
+         </button>
+       </h5>
+     </div>
+     <!--コンテンツ-->
+     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+       <div class="card-body">
+         中略 
+       </div>
+     </div>
+   </div>
+ </div>
+ 
+ 
+ 
+ 
+ 
   <script src="js/jquery-3.3.1.slim.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
