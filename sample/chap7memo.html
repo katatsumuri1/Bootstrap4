@@ -110,6 +110,206 @@
   <!--フェードで遷移するカルーセル(carousel-crossfade)-->
   <div id="carouselSample" class="carousel slide carousel-fade" data-ride="carousel">
   
+  
+  <!--カルーセルをjavascript経由で呼び出す-->
+  <div id="carouselExample" class="carousel slide"><!--data-ride="carousel"は不要-->
+    ・・・中略・・・
+  </div>
+  <script>
+    $(function(){
+      $('#carouselExample').carousel();
+    });
+  </script>
+  
+  <!--データ属性でオプションを指定-->
+  <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="1000">
+    JavaScriptでオプションを渡す場合は次のように指定する
+  
+  <div id="carouselExample" class="carousel slide">
+    ・・・中略・・・
+  </div>
+  <script>
+    $(function(){
+      $('#carouselExample').carousel({
+        interval: 1000
+      });
+    });
+  </script>
+  
+  <!--カルーセルメソッドの例(carousel-methods.html)-->
+  <!--コントロールボタン-->
+  <div class="control-buttons my-3">
+    <input type="button" class="btn btn-primary start-slide"  value="循環開始">
+    <input type="button" class="btn btn-primary pause-slide"  value="循環停止">
+    <input type="button" class="btn btn-primary prev-slide"   value="前へ循環">
+    <input type="button" class="btn btn-primary next-slide"   value="次へ循環">
+    <input type="button" class="btn btn-primary slide-first"  value="第1スライド">
+    <input type="button" class="btn btn-primary slide-second" value="第2スライド">
+    <input type="button" class="btn btn-primary slide-third"  value="第3スライド">
+  </div>
+  
+  <script>
+    $(function(){
+    //循環開始
+    $(".start-slide").on('click',function(){
+      $("#carousel").carousel('cycle');
+    });
+    //一時停止
+    $(".pause-slide").on('click',function(){
+      $("#carousel").carousel('pause');
+    });
+    //前へ循環
+    $(".prev-slide").on('click',function(){
+      $("#carousel").carousel('prev');
+    });
+    //次へ循環
+    $(".next-slide").on('click',function(){
+      $("#carousel").carousel('next');
+    });
+    //特定のフレームに循環
+    $(".slide-first").on('click',function(){
+      $("#carousel").carousel(0);
+    });
+    $(".slide-second").on('click',function(){
+      $("#carousel").carousel(1);
+    });
+    $(".slide-third").on('click',function(){
+      $("#carousel").carousel(2);
+    });
+    });
+  </script>
+  
+  <!--カルーセルのイベント: slid.bs.carousel(carousel-events.html)-->
+  <script>
+    $('#carouselExample').on('slide.bs.carousel', function(){
+      $('#carouselExample.carousel-caption').hide();
+    });
+    
+    $('carouselExample').on('slid.bs.carousel',function(){
+      $('#carouselExample. carousel-caption').show();  
+    });
+  </script>
+  
+  
+  <!--折りたたみの基本的な使用例(collapse-basic)-->
+  <!--切り替えボタン-->
+  <p>
+    <!--a要素とhref属性による切り替えボタン-->
+    <a class="btn btn-secondary" data-toggle="collapse" href="#collapseContent01" role="button"
+ aria-expanded="false" aria-controls="collapseContent01">a要素とhere属性によるボタン
+ </p>
+ <!--切り替える対象となるコンテンツ-->
+ <div class="collapse" id="collapseContent01">
+   <div class="card card-body">
+     a要素の切り替えボタンをクリックする事で表示と非表示とが切り替わるコンテンツ
+   </div>
+ </div>
+ 
+ <!--button要素とdata-target属性による切り替えボタン-->
+ <p>
+   <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseContent02" aria-expanded="false" aria-controls="collapseContent02">
+     button要素とdata-target属性によるボタン
+   </button>
+ </p>
+ <!--切り替え対象となるコンテンツ-->
+ <div class="collapse" id="collapseContent02">
+   <div class="card card-body">
+     button要素の切り替えボタンをクリックする事で表示と非表示とが切り替わるコンテンツ
+   </div>
+ </div>
+ 
+ 
+ <!--複数の要素の表示と非表示とを切り替える(collapse-multiple.html)-->
+ <p>
+   <!--ID「content-01」の切り替えボタン-->
+    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#content-01" aria-expanded="false" aria-controls="content-01">
+      IDcontent-01を表示切り替え
+    </button>
+        <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#content-02" aria-expanded="false" aria-controls="content-02">
+      IDcontent-02を表示切り替え
+    </button>
+    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target=".contents" aria-expanded="false" aria-controls="contents-01 contents-02">
+      クラスcontentsを同時に表示切り替え
+    </button>
+ </p>
+ <div class="row">
+   <div class="col">
+     <!--ID content-01、クラスcontents-->
+     <div class="collapse contents" id="content-01">
+       <div class="card card-body">
+         ID content-01 class contents
+       </div>
+     </div>
+   </div>
+   <div class="col">
+     <!--ID content-02、クラスcontents-->
+     <div class="collapse contents" id="content-02">
+       <div class="card card-body">
+         ID content-02 class contents
+       </div>
+     </div>
+   </div>
+ </div>
+ 
+ <!--基本的なアコーディオン-->
+ <div class="accordion" id="accordion">
+   <!--カード01-->
+   <div class="card">
+     <!--カードヘッダー-->
+     <div class="card-header" id="headingOne">
+       <h5 class="mb-0">
+         <button class="btn btn-lnik" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+           カード01の切り替えボタン
+         </button>
+       </h5>
+     </div>
+     <!--コンテンツ-->
+     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+       <div class="card-body">
+         中略 
+       </div>
+     </div>
+   </div>
+   <!--カード02-->
+   <div class="card">
+     <!--カードヘッダー-->
+     <div class="card-header" id="headingTwo">
+       <h5 class="mb-0">
+         <button class="btn btn-lnik" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+           カード02の切り替えボタン
+         </button>
+       </h5>
+     </div>
+     <!--コンテンツ-->
+     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+       <div class="card-body">
+         中略 
+       </div>
+     </div>
+   </div>
+    <!--カード03-->
+   <div class="card">
+     <!--カードヘッダー-->
+     <div class="card-header" id="headingThree">
+       <h5 class="mb-0">
+         <button class="btn btn-lnik" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+           カード03の切り替えボタン
+         </button>
+       </h5>
+     </div>
+     <!--コンテンツ-->
+     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+       <div class="card-body">
+         中略 
+       </div>
+     </div>
+   </div>
+ </div>
+ 
+ 
+ 
+ 
+ 
   <script src="js/jquery-3.3.1.slim.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
