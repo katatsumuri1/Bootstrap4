@@ -306,10 +306,60 @@
    </div>
  </div>
  
+ <!--折り畳みのjavascript使用(collaps-js.html)-->
+ <p><a class="btn btn-primary toggle-btn" href="#" role="button">a要素によるボタン</a></p>
+ <div class="collapse">
+ 表示と非表示が切り替わるコンテンツ
+ </div>
+ ・・・中略・・・
+ <script>
+     $('.toggle-btn').click(function(){
+         $('.collapse').collapse();
+     });
+ </script>
+ 
+ <!--折り畳みのjavascript使用(collaps-js-parent.html)-->
+ <div id="sample">
+   <div class="container">
+     <p>
+       <a class="btn btn-secondary" data-toggle="collapse" href="#collapseContent-1" role="button" aria-expanded="false" aria-controls="collapseContent01">
+         ボタン1
+       </a>
+     </p>
+     <div class="collapse" id="collapseContent01" data-parent="#sample">
+       <div class="card-body">
+         コンテンツ1
+       </div>
+     </div>
+   </div>
+ </div>
  
  
+ <!--折り畳みの表示、非表示を切り替える-->
+ <script>
+   $('.toggle-btn').click(function(){
+     $('.collapse').collapse('toggle');
+   });
+ </script>
  
- 
+ <!--折り畳みのイベント:show.bs.collapse-->
+ <div class="container">
+   <p>
+     <a class="btn btn-primary toggle-btn" data-toggle="collapse" href="#sample" role="button">
+       表示する
+     </a>
+   </p>
+ </div>
+ <script>
+   $(function(){
+     $('#sample').on('hide.bs.collapse', function(){
+       $('toggle-btn').html('表示する');
+     });
+     $('#sample').on('show.bs.collapse',function(){
+       $('toggle-btn').html('非表示にする');
+     });
+   });
+ </script>
   <script src="js/jquery-3.3.1.slim.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
