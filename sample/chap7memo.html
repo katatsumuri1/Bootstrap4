@@ -115,11 +115,11 @@
   <div id="carouselExample" class="carousel slide"><!--data-ride="carousel"は不要-->
     ・・・中略・・・
   </div>
-  <script>
-    $(function(){
-      $('#carouselExample').carousel();
-    });
-  </script>
+  <!--<script>-->
+  <!--  $(function(){-->
+  <!--    $('#carouselExample').carousel();-->
+  <!--  });-->
+  <!--</script>-->
   
   <!--データ属性でオプションを指定-->
   <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="1000">
@@ -128,13 +128,13 @@
   <div id="carouselExample" class="carousel slide">
     ・・・中略・・・
   </div>
-  <script>
-    $(function(){
-      $('#carouselExample').carousel({
-        interval: 1000
-      });
-    });
-  </script>
+  <!--<script>-->
+  <!--  $(function(){-->
+  <!--    $('#carouselExample').carousel({-->
+  <!--      interval: 1000-->
+  <!--    });-->
+  <!--  });-->
+  <!--</script>-->
   
   <!--カルーセルメソッドの例(carousel-methods.html)-->
   <!--コントロールボタン-->
@@ -148,47 +148,47 @@
     <input type="button" class="btn btn-primary slide-third"  value="第3スライド">
   </div>
   
-  <script>
-    $(function(){
-    //循環開始
-    $(".start-slide").on('click',function(){
-      $("#carousel").carousel('cycle');
-    });
-    //一時停止
-    $(".pause-slide").on('click',function(){
-      $("#carousel").carousel('pause');
-    });
-    //前へ循環
-    $(".prev-slide").on('click',function(){
-      $("#carousel").carousel('prev');
-    });
-    //次へ循環
-    $(".next-slide").on('click',function(){
-      $("#carousel").carousel('next');
-    });
-    //特定のフレームに循環
-    $(".slide-first").on('click',function(){
-      $("#carousel").carousel(0);
-    });
-    $(".slide-second").on('click',function(){
-      $("#carousel").carousel(1);
-    });
-    $(".slide-third").on('click',function(){
-      $("#carousel").carousel(2);
-    });
-    });
-  </script>
+//   <script>
+//     $(function(){
+//     //循環開始
+//     $(".start-slide").on('click',function(){
+//       $("#carousel").carousel('cycle');
+//     });
+//     //一時停止
+//     $(".pause-slide").on('click',function(){
+//       $("#carousel").carousel('pause');
+//     });
+//     //前へ循環
+//     $(".prev-slide").on('click',function(){
+//       $("#carousel").carousel('prev');
+//     });
+//     //次へ循環
+//     $(".next-slide").on('click',function(){
+//       $("#carousel").carousel('next');
+//     });
+//     //特定のフレームに循環
+//     $(".slide-first").on('click',function(){
+//       $("#carousel").carousel(0);
+//     });
+//     $(".slide-second").on('click',function(){
+//       $("#carousel").carousel(1);
+//     });
+//     $(".slide-third").on('click',function(){
+//       $("#carousel").carousel(2);
+//     });
+//     });
+//   </script>
   
   <!--カルーセルのイベント: slid.bs.carousel(carousel-events.html)-->
-  <script>
-    $('#carouselExample').on('slide.bs.carousel', function(){
-      $('#carouselExample.carousel-caption').hide();
-    });
+  <!--<script>-->
+  <!--  $('#carouselExample').on('slide.bs.carousel', function(){-->
+  <!--    $('#carouselExample.carousel-caption').hide();-->
+  <!--  });-->
     
-    $('carouselExample').on('slid.bs.carousel',function(){
-      $('#carouselExample. carousel-caption').show();  
-    });
-  </script>
+  <!--  $('carouselExample').on('slid.bs.carousel',function(){-->
+  <!--    $('#carouselExample. carousel-caption').show();  -->
+  <!--  });-->
+  <!--</script>-->
   
   
   <!--折りたたみの基本的な使用例(collapse-basic)-->
@@ -312,11 +312,11 @@
  表示と非表示が切り替わるコンテンツ
  </div>
  ・・・中略・・・
- <script>
-     $('.toggle-btn').click(function(){
-         $('.collapse').collapse();
-     });
- </script>
+ <!--<script>-->
+ <!--    $('.toggle-btn').click(function(){-->
+ <!--        $('.collapse').collapse();-->
+ <!--    });-->
+ <!--</script>-->
  
  <!--折り畳みのjavascript使用(collaps-js-parent.html)-->
  <div id="sample">
@@ -336,11 +336,11 @@
  
  
  <!--折り畳みの表示、非表示を切り替える-->
- <script>
-   $('.toggle-btn').click(function(){
-     $('.collapse').collapse('toggle');
-   });
- </script>
+//  <script>
+//   $('.toggle-btn').click(function(){
+//      $('.collapse').collapse('toggle');
+//   });
+//  </script>
  
  <!--折り畳みのイベント:show.bs.collapse-->
  <div class="container">
@@ -350,16 +350,194 @@
      </a>
    </p>
  </div>
- <script>
-   $(function(){
-     $('#sample').on('hide.bs.collapse', function(){
-       $('toggle-btn').html('表示する');
-     });
-     $('#sample').on('show.bs.collapse',function(){
-       $('toggle-btn').html('非表示にする');
-     });
-   });
- </script>
+
+
+ <!--<script>-->
+ <!-- $(function(){-->
+ <!--    $('#sample').on('hide.bs.collapse', function(){-->
+ <!--     $('toggle-btn').html('表示する');-->
+ <!--    });-->
+ <!--    $('#sample').on('show.bs.collapse',function(){-->
+ <!--     $('toggle-btn').html('非表示にする');-->
+ <!--    });-->
+ <!-- });-->
+ <!--</script>-->
+ 
+ <!--モーダルの基本的な使用例-->
+ <!--切り替えボタン-->
+ <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+     切り替えボタン
+ </button>
+ <!--モーダルウィンドウ外枠-->
+ <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <!--モーダルのダイアルログ本体-->
+     <div class="modal-dialog" role="document">
+         <!--モーダルのコンテンツ部分-->
+         <div class="modal-content">
+             <!--モーダルのヘッダー-->
+             <div class="modal-header">
+                 <!--モーダルのタイトル-->
+                 <h5 class="modal-title" id="exampleModalLabel">モーダルのタイトル</h5>
+                 <!--閉じるアイコン-->
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                 </button>
+             </div>
+             <!--モーダルの本文-->
+             <div class="modal-body">
+                 モーダルの本文が入ります
+             </div>
+             <!--モーダルのヘッダー-->
+             <div class="modal-footer">
+                 <!--閉じるボタン-->
+                 <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+             </div>
+         </div>
+     </div>
+ </div>
+ 
+ <!--モーダルのアニメーション設定(modal-animation.html)-->
+ <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+     切り替えボタン
+ </button>
+ <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <!--モーダルのダイアルログ本体-->
+     <div class="modal-dialog" role="document">
+         <!--モーダルのコンテンツ部分-->
+         <div class="modal-content">
+             <!--モーダルのヘッダー-->
+             <div class="modal-header">
+                 <!--モーダルのタイトル-->
+                 <h5 class="modal-title" id="exampleModalLabel">モーダルのタイトル</h5>
+                 <!--閉じるアイコン-->
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                 </button>
+             </div>
+             <!--モーダルの本文-->
+             <div class="modal-body">
+                 モーダルの本文が入ります
+             </div>
+             <!--モーダルのヘッダー-->
+             <div class="modal-footer">
+                 <!--閉じるボタン-->
+                 <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+             </div>
+         </div>
+     </div>
+ </div>
+ 
+ <!--垂直方向中央に配置するモーダル-->
+ <!--モーダルウィンドウ外枠-->
+ <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <!--モーダルのダイアルログ本体-->
+     <div class="modal-daialog modal-dialog-centered" role="document">
+         中略
+     </div>
+ </div>
+ 
+ <!--グリッドレイアウトを使用したモーダルの例-->
+ <div class="modal-body">
+     <div class="container-fluid">
+         <!--１行目-->
+         <div class="row">
+             <div class="col-md-4">col-md-4</div>
+             <div class="col-md-4 ml-auto">col-md-4 ml-auto</div>
+         </div>
+        <!--2行目-->
+         <div class="row">
+             <div class="col-md-3 ml-auto">col-md-3 ml-auto</div>
+             <div class="col-md-2 ml-auto">col-md-2 ml-auto</div>
+         </div>
+        <!--3行目-->
+         <div class="row">
+             <div class="col-md-6 ml-auto">col-md-6 ml-auto</div>
+         </div>
+         <!--３行目-->
+         <div class="row">
+             <div class="col-sm-9">
+                 Level1:col-sm-9
+                 <div class="row">
+                     <div class="col-8 col-sm-6">
+                         Level2:col-8 col-sm-6
+                     </div>
+                     <div class="col-4 col-sm-6">
+                         Level2:col-4 col-sm-6
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+ 
+ 
+ <!--モーダルのサイズオプション-->
+ <!--大きなサイズのモーダル-->
+ <h3>大きなサイズのモーダル</h3>
+ <!--切り替えボタン-->
+ <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#largeModal">
+     切り替えボタン(modal-lg)
+ </button>
+ <!--モーダル-->
+ <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModalLabel" aria-hidden="true">
+     <!--モーダルのダイアログ本体-->
+     <div class="modal-dialog modal-lg" role="document">
+        <!--モーダルのコンテンツ部分-->
+         <div class="modal-content">
+             <!--モーダルのヘッダー-->
+             <div class="modal-header">
+                 <!--モーダルのタイトル-->
+                 <h5 class="modal-title" id="exampleModalLabel">モーダルのタイトル</h5>
+                 <!--閉じるアイコン-->
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                 </button>
+             </div>
+             <!--モーダルの本文-->
+             <div class="modal-body">
+                 モーダルの本文が入ります
+             </div>
+             <!--モーダルのヘッダー-->
+             <div class="modal-footer">
+                 <!--閉じるボタン-->
+                 <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+             </div>
+         </div>
+     </div>
+ </div>
+ <!--小さなサイズのモーダル-->
+ <h3 class="mt-5">小さなサイズのモーダル</h3>
+ <!--切り替えボタン-->
+ <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#smallModal">
+     切り替えボタン(modal-lg)
+ </button>
+ <!--モーダル-->
+ <div class="modal fade" id="smallModal" tabindex="-1" role="dialog" aria-labelledby="smallModalLabel" aria-hidden="true">
+     <!--モーダルのダイアログ本体-->
+     <div class="modal-dialog modal-sm" role="document">
+        <!--モーダルのコンテンツ部分-->
+         <div class="modal-content">
+             <!--モーダルのヘッダー-->
+             <div class="modal-header">
+                 <!--モーダルのタイトル-->
+                 <h5 class="modal-title" id="exampleModalLabel">モーダルのタイトル</h5>
+                 <!--閉じるアイコン-->
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                 </button>
+             </div>
+             <!--モーダルの本文-->
+             <div class="modal-body">
+                 モーダルの本文が入ります
+             </div>
+             <!--モーダルのヘッダー-->
+             <div class="modal-footer">
+                 <!--閉じるボタン-->
+                 <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+             </div>
+         </div>
+     </div>
+ </div>
   <script src="js/jquery-3.3.1.slim.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
