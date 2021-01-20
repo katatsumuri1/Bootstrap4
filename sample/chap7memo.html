@@ -538,6 +538,83 @@
          </div>
      </div>
  </div>
+ 
+ 
+ 
+ <!--スクロールスパイの基本的な使用例-->
+ <body data-spy="scroll" data-target="#navbar" style="position:relative padding-top: 70px">
+     ・・・中略・・・
+     <!--ナビゲーション-->
+     <nav id="navbar" class="navbar navbar-dark bg-dark fixed-top">
+         <a class="navbar-brand" href="#">ナビゲーションバー</a>
+         <ul class="nav nav-pils">
+             <li class="nav-item">
+                 <a class="nav-link" href="#contents01">コンテンツ01</a>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="#contents02">コンテンツ02</a>
+             </li>
+             <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                 aria-haspopup="true" aria-expanded="false">コンテンツ03</a>
+                 <div class-"dropdown-menu">
+                     <a class-"dropdown-item" href="#contents03-01">01</a>
+                     <a class-"dropdown-item" href="#contents03-01">02</a>
+                     <div role="separator" class="dropdown-divider"></div>
+                     <a class-"dropdown-item" href="#contents03-01">03</a>
+                 </div>
+             </li>
+         </ul>
+     </nav>
+     <!--コンテンツ-->
+     <div class="mb-5">
+         <h4 id="contents01" style="padding-top: 60px; margin-top: -60px">コンテンツ01</h4>
+         ・・中略・・
+     </div>
+     <div class="mb-5">
+         <h4 id="contents02" style="padding-top: 60px; margin-top: -60px">コンテンツ02</h4>
+         ・・中略・・
+     </div>
+     <div class="mb-5">
+         <h4 id="contents03-01" style="padding-top: 60px; margin-top: -60px">コンテンツ03-01</h4>
+         ・・中略・・
+     </div>
+     <div class="mb-5">
+         <h4 id="contents03-02" style="padding-top: 60px; margin-top: -60px">コンテンツ03-02</h4>
+         ・・中略・・
+     </div>
+     <div class="mb-5">
+         <h4 id="contents03-03" style="padding-top: 60px; margin-top: -60px">コンテンツ03-03</h4>
+         ・・中略・・
+     </div>
+ </body>
+ 
+ <!--body要素以外の要素にスクロールスパイを使用した例-->
+ <div class="container">
+     <div class="row">
+         <div class="col-4">
+             <!--リストグループ-->
+             <div id="list-example" class="list-group">
+                 <a class="list-group-item list-group-item-action" href="#list-item-1">コンテンツ01</a>
+                 <a class="list-group-item list-group-item-action" href="#list-item-2">コンテンツ02</a>
+                 <a class="list-group-item list-group-item-action" href="#list-item-3">コンテンツ03</a>
+             </div>
+         </div>
+         <div class="col-8">
+             <!--コンテンツ-->
+             <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example borde px-1">
+                 <h4 id="list-item-1">コンテンツ01</h4>
+                 ・・・中略・・・
+                 <h4 id="list-item-2">コンテンツ02</h4>
+                 ・・・中略・・・
+                 <h4 id="list-item-3">コンテンツ03</h4>
+                 ・・・中略・・・
+                 <h4 id="list-item-4">コンテンツ04</h4>
+                 ・・・中略・・・
+             </div>
+         </div>
+     </div>
+ </div>
   <script src="js/jquery-3.3.1.slim.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
