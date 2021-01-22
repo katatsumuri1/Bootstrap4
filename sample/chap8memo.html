@@ -101,24 +101,331 @@
   <img class="mh-100" src="main.png" alt="tamumu">
 </div>
 
+<!--自動マージンによる水平方向中央揃え-->
+<div class="mx-auto bg-primary">mx-auto</div>
+
+<!--flexboxを有効にするクラスの例-->
+<div class="d-flex bg-primary">d-flex</div>
+<div class="d-inline-flex bg-primary">d-inline-flex</div>
+
+<!--flexコンテナの主軸方向を設定するクラスの例-->
+<h3>左から右(flex-row)</h3>
+<div class="d-flex flex-row">
+  <div>flexアイテム01</div>
+  <div>flexアイテム02</div>
+  <div>flexアイテム03</div>
+</div>
+<h3>右から左(flex-row-reverse)</h3>
+<div class="d-flex flex-row-reverse">
+  <div>flexアイテム01</div>
+  <div>flexアイテム02</div>
+  <div>flexアイテム03</div>
+</div>
+<h3>上から下(flex-column)</h3>
+<div class="d-flex flex-column">
+  <div>flexアイテム01</div>
+  <div>flexアイテム02</div>
+  <div>flexアイテム03</div>
+</div>
+<h3>下から上(flex-column-reverse)</h3>
+<div class="d-flex flex-column-reverse">
+  <div>flexアイテム01</div>
+  <div>flexアイテム02</div>
+  <div>flexアイテム03</div>
+</div>
 
 
+<!--主軸方向の整列をクラスの例(justify-content.html)-->
+<h3>justify-content-start</h3>
+<div class="d-flex justify-content-start">
+  <div>flexアイテム01</div>
+  <div>flexアイテム02</div>
+  <div>flexアイテム03</div>
+</div>
+<h3>justify-content-end</h3>
+<div class="d-flex justify-content-end">
+  <div>flexアイテム01</div>
+  <div>flexアイテム02</div>
+  <div>flexアイテム03</div>
+</div>
+<h3>justify-content-center</h3>
+<div class="d-flex justify-content-center">
+  <div>flexアイテム01</div>
+  <div>flexアイテム02</div>
+  <div>flexアイテム03</div>
+</div>
+<h3>justify-content-between</h3>
+<div class="d-flex justify-content-between">
+  <div>flexアイテム01</div>
+  <div>flexアイテム02</div>
+  <div>flexアイテム03</div>
+</div>
+<h3>justify-content-around</h3>
+<div class="d-flex justify-content-around">
+  <div>flexアイテム01</div>
+  <div>flexアイテム02</div>
+  <div>flexアイテム03</div>
+</div>
 
+<!--交差軸方向の整列をするクラスの例-->
+<h3>align-items-stretch</h3>
+<div class="d-flex align-items-stretch" style="height: 200px">
+  <div>flexアイテム01</div>
+  <div>flexアイテム02</div>
+  <div>flexアイテム03</div>
+</div>
+<h3>align-items-start</h3>
+<div class="d-flex align-items-start" style="height: 200px">
+  <div>flexアイテム01</div>
+  <div>flexアイテム02</div>
+  <div>flexアイテム03</div>
+</div>
 
+<h3>align-items-end</h3>
+<div class="d-flex align-items-end" style="height: 200px">
+  <div>flexアイテム01</div>
+  <div>flexアイテム02</div>
+  <div>flexアイテム03</div>
+</div>
+<h3>align-items-center</h3>
+<div class="d-flex align-items-center" style="height: 200px">
+  <div>flexアイテム01</div>
+  <div>flexアイテム02</div>
+  <div>flexアイテム03</div>
+</div>
+<h3>align-items-baseline</h3>
+<div class="d-flex align-items-baseline" style="height: 200px">
+  <div>flexアイテム01</div>
+  <div>flexアイテム02</div>
+  <div>flexアイテム03</div>
+</div>
 
+<!--flexアイテムを交差軸上で個別に整列するクラス-->
+<h3>align-self-stretch</h3>
+<div class="d-flex" style="height: 100px">
+  <div>flexアイテム01</div>
+  <div class="align-self-stretch">flexアイテム02(align-self-stretch)</div>
+  <div>flexアイテム03</div>
+</div>
+<h3>align-self-start</h3>
+<div class="d-flex" style="height: 100px">
+  <div>flexアイテム01</div>
+  <div class="align-self-start">flexアイテム02(align-self-stretch)</div>
+  <div>flexアイテム03</div>
+</div>
+<h3>align-self-end</h3>
+<div class="d-flex" style="height: 100px">
+  <div>flexアイテム01</div>
+  <div class="align-self-end">flexアイテム02(align-self-stretch)</div>
+  <div>flexアイテム03</div>
+</div>
+<h3>align-self-center</h3>
+<div class="d-flex" style="height: 100px">
+  <div>flexアイテム01</div>
+  <div class="align-self-center">flexアイテム02(align-self-stretch)</div>
+  <div>flexアイテム03</div>
+</div>
+<h3>align-self-baseline</h3>
+<div class="d-flex" style="height: 100px">
+  <div>flexアイテム01</div>
+  <div class="align-self-baseline">flexアイテム02(align-self-stretch)</div>
+  <div>flexアイテム03</div>
+</div>
 
+<!--flexコンテナ全幅に渡って等幅で整列するクラス(flex-fill)-->
+<div class="d-flex">
+  <div class="flex-fill">アイテム01</div>
+  <div class="flex-fill">アイテム02</div>
+  <div class="flex-fill">アイテム03</div>
+</div>
 
+<!--flexアイテムの伸縮を指定するクラス(flex-grouw-shrink.html)-->
+<h3>デフォルト</h3>
+<div class="d-flex" style="height: 100px">
+  <div class="p-2">flexアイテム01</div>
+  <div class="p-2">flexアイテム02</div>
+  <div class="p-2">flexアイテム03</div>
+</div>
+<!--flexアイテムの幅を伸長する-->
+<h3>flex-grow</h3>
+<div class="d-flex" style="height: 100px">
+  <div class="p-2 flex-grow-1">flexアイテム01</div>
+  <div class="p-2">flexアイテム02</div>
+  <div class="p-2">flexアイテム03</div>
+</div>
+<!--flexアイテムの幅を縮小する-->
+<h3>デフォルト</h3>
+<div class="d-flex" style="height: 100px">
+  <div class="p-2 flex-shrink-1">flexアイテム01</div>
+  <div class="p-2">flexアイテム02</div>
+  <div class="p-2">flexアイテム03</div>
+</div>
 
+<!--flexアイテムの折り返しを設定するクラス(flex-wrap.html)-->
+<h3>flex-nowrap</h3>
+<div class="d-flex flex-nowrap">
+  <div>flexアイテム01</div>
+  <div>flexアイテム02</div>
+  <div>flexアイテム03</div>
+  <div>flexアイテム04</div>
+  <div>flexアイテム05</div>
+  <div>flexアイテム06</div>
+  <div>flexアイテム07</div>
+  <div>flexアイテム08</div>
+  <div>flexアイテム09</div>
+  <div>flexアイテム10</div>
+  <div>flexアイテム11</div>
+  <div>flexアイテム12</div>
+</div>
+<h3>flex-wrap</h3>
+<div class="d-flex flex-wrap">
+  <div>flexアイテム01</div>
+  <div>flexアイテム02</div>
+  <div>flexアイテム03</div>
+  <div>flexアイテム04</div>
+  <div>flexアイテム05</div>
+  <div>flexアイテム06</div>
+  <div>flexアイテム07</div>
+  <div>flexアイテム08</div>
+  <div>flexアイテム09</div>
+  <div>flexアイテム10</div>
+  <div>flexアイテム11</div>
+  <div>flexアイテム12</div>
+</div>
+<h3>flex-wrap-reverse</h3>
+<div class="d-flex flex-wrap-reverse">
+  <div>flexアイテム01</div>
+  <div>flexアイテム02</div>
+  <div>flexアイテム03</div>
+  <div>flexアイテム04</div>
+  <div>flexアイテム05</div>
+  <div>flexアイテム06</div>
+  <div>flexアイテム07</div>
+  <div>flexアイテム08</div>
+  <div>flexアイテム09</div>
+  <div>flexアイテム10</div>
+  <div>flexアイテム11</div>
+  <div>flexアイテム12</div>
+</div>
 
+<!--特定のflexアイテムの表示順序を入れ替えるクラスの例(flex-order.html)-->
+<div class="d-flex">
+  <div class="order-1">flexアイテム01</div>
+  <div class="order-3">flexアイテム02</div>
+  <div class="order-2">flexアイテム03</div>
+</div>
 
+<!--自動マージンでflexアイテムを分離した例(mr-auto)-->
+<h3>デフォルト(自動マージンなし)</h3>
+<div class="d-flex">
+  <div>Flexアイテム1</div>
+  <div>Flexアイテム2</div>
+  <div>Flexアイテム3</div>
+</div>
+<h3>右側に分離(mr-auto)</h3>
+<div class="d-flex">
+  <div class="mr-auto">Flexアイテム1</div>
+  <div>Flexアイテム2</div>
+  <div>Flexアイテム3</div>
+</div>
+<h3>左側に分離(ml-auto)</h3>
+<div class="d-flex">
+  <div>Flexアイテム1</div>
+  <div>Flexアイテム2</div>
+  <div class="ml-auto p-2">Flexアイテム3</div>
+</div>
 
-
-
-
-
-
-
-
+<!--複数行におけるflexアイテムの交差軸の整列をするクラス(align-content.html)-->
+<h3>align-content-start</h3>
+<div class="d-flex align-content-start flex-wrap" style="height:200px">
+  <div>flexアイテム01</div>
+  <div>flexアイテム02</div>
+  <div>flexアイテム03</div>
+  <div>flexアイテム04</div>
+  <div>flexアイテム05</div>
+  <div>flexアイテム06</div>
+  <div>flexアイテム07</div>
+  <div>flexアイテム08</div>
+  <div>flexアイテム09</div>
+  <div>flexアイテム10</div>
+  <div>flexアイテム11</div>
+  <div>flexアイテム12</div>
+</div>
+<h3>align-content-end</h3>
+<div class="d-flex align-content-end flex-wrap" style="height:200px">
+  <div>flexアイテム01</div>
+  <div>flexアイテム02</div>
+  <div>flexアイテム03</div>
+  <div>flexアイテム04</div>
+  <div>flexアイテム05</div>
+  <div>flexアイテム06</div>
+  <div>flexアイテム07</div>
+  <div>flexアイテム08</div>
+  <div>flexアイテム09</div>
+  <div>flexアイテム10</div>
+  <div>flexアイテム11</div>
+  <div>flexアイテム12</div>
+</div>
+<h3>align-content-center</h3>
+<div class="d-flex align-content-center flex-wrap" style="height:200px">
+  <div>flexアイテム01</div>
+  <div>flexアイテム02</div>
+  <div>flexアイテム03</div>
+  <div>flexアイテム04</div>
+  <div>flexアイテム05</div>
+  <div>flexアイテム06</div>
+  <div>flexアイテム07</div>
+  <div>flexアイテム08</div>
+  <div>flexアイテム09</div>
+  <div>flexアイテム10</div>
+  <div>flexアイテム11</div>
+  <div>flexアイテム12</div>
+</div>
+<h3>align-content-between</h3>
+<div class="d-flex align-content-between flex-wrap" style="height:200px">
+  <div>flexアイテム01</div>
+  <div>flexアイテム02</div>
+  <div>flexアイテム03</div>
+  <div>flexアイテム04</div>
+  <div>flexアイテム05</div>
+  <div>flexアイテム06</div>
+  <div>flexアイテム07</div>
+  <div>flexアイテム08</div>
+  <div>flexアイテム09</div>
+  <div>flexアイテム10</div>
+  <div>flexアイテム11</div>
+  <div>flexアイテム12</div>
+</div>
+<h3>align-content-around</h3>
+<div class="d-flex align-content-around flex-wrap" style="height:200px">
+  <div>flexアイテム01</div>
+  <div>flexアイテム02</div>
+  <div>flexアイテム03</div>
+  <div>flexアイテム04</div>
+  <div>flexアイテム05</div>
+  <div>flexアイテム06</div>
+  <div>flexアイテム07</div>
+  <div>flexアイテム08</div>
+  <div>flexアイテム09</div>
+  <div>flexアイテム10</div>
+  <div>flexアイテム11</div>
+  <div>flexアイテム12</div>
+</div>
+<h3>align-content-stretch</h3>
+<div class="d-flex align-content-stretch flex-wrap" style="height:200px">
+  <div>flexアイテム01</div>
+  <div>flexアイテム02</div>
+  <div>flexアイテム03</div>
+  <div>flexアイテム04</div>
+  <div>flexアイテム05</div>
+  <div>flexアイテム06</div>
+  <div>flexアイテム07</div>
+  <div>flexアイテム08</div>
+  <div>flexアイテム09</div>
+  <div>flexアイテム10</div>
+  <div>flexアイテム11</div>
+  <div>flexアイテム12</div>
+</div>
 
 
 
