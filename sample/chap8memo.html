@@ -535,9 +535,33 @@ Bootstrapは、HTML/CSS/JavaScriptから構成される最も有名なWebアプ�
   </tbody>
 </table>
 
+<!--スクリーンリーダー用クラスの例(sr-only.html)-->
+<a class="sr-only sr-only-foucusable" href="#content">メインコンテンツへスキップ</a>
 
+<!--invisibleとd-noneクラスの違い(visibility.html)-->
+<ol>
+  <li>リストその１</li>
+  <li class="invisible">リストその2</li><!--ボックスを保ったまま表示-->
+  <li>リストその3</li>
+  <li class="d-none">リストその4</li><!--ボックスごと非表示-->
+  <li>リストその5</li>
+</ol>
 
+<!--クローズアイコンの例-->
+<button type="button" class="close" aria-label="閉じる">
+  <span aria-hidden="true">&times;</span>
+</button>
 
+<!--埋め込みクラスの例(embed.html)-->
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+</div>
+
+<!--shadowユーティリティの例(shadow.html)-->
+<div class="shadow-none p-3 mb-5 bg-light rounded">影なし(shdow-none)</div>
+<div class="shadow-sm p-3 mb-5 bg-light rounded">小さめの影(shdow-sm)</div>
+<div class="shadow p-3 mb-5 bg-light rounded">標準の影(shdow)</div>
+<div class="shadow-lg p-3 mb-5 bg-light rounded">大きめの影(shdow-lg)</div>
 
 
 
