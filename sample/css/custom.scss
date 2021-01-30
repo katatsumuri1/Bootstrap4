@@ -1,0 +1,47 @@
+// 変数の上書き
+$enable-gradients: true;
+// BootstrapのSassファイルをインポート
+@import "../scss/bootstrap";
+// 既存のテーマカラーを変更する
+$theme-colors:(
+    "primary": #0074d9,
+    "danger" : #ff4136
+);
+// テーマカラーを新しく追加する
+$theme-colors:(
+    "custom-color": #900
+);
+// マップから色を削除する
+$theme-colors: map-remove($theme-colors, "success", "info", "danger");
+
+//変数の上書き
+$body-bg: #eee;
+$body-color: #000;
+
+//BootstrapのSassファイルをインポート
+@import "../scss/bootstrap";
+// スペーサーの設定を変更する
+$spacer: 10pxl//変更
+$spacers:(
+1:($spacer *3), //変更
+6:($spacer *3.5)//追加
+)
+
+// Sizingユーティリティを追加する
+$sizes: (
+    5: 5% //　追加
+);
+
+// ブレイクポイントを変更する
+$sizes: (
+    sm: 420px//smのブレイクポイントを420pxに変更
+);
+
+// コンテナの最大はばを変更する
+$container-max-widths: (
+    lg: 980px //lgの最大幅を980pxに変更
+);
+
+// カラム数やガター幅を変更する
+$grid-columns: 9;
+$grid-gutter-width: 20px;
